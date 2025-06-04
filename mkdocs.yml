@@ -32,3 +32,5 @@ plugins:
   - glightbox
 extra_css:
   - stylesheets/extra.css
+# hooks:
+#   - lfs_s3_replacer.py

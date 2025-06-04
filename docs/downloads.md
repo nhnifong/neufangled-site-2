@@ -12,7 +12,7 @@ I do not yet have a bundled release of the control panel. it has to be run from 
 
 Compatible with the pilot release hardware kit
 
- * **[Download STLs](https://bucket-neu-2.s3.us-east-1.amazonaws.com/stringman_pilot_stls.zip)**
+ * **[Download STLs](assets/stringman_pilot_stls.zip)**
  * **[Print Guide](print_guide.md)**
 
 ## CAD Design Document
