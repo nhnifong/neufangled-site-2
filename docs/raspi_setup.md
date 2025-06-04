@@ -10,29 +10,29 @@ Download the [Raspiberry Pi Imager](https://www.raspberrypi.com/software/)
 Insert a MicroSD card and open the imager  
 
 For device, select `Raspberry Pi Zero 2 W`  
-![](https://bucket-neu-2.s3.us-east-1.amazonaws.com/images/raspi/image2.png){ loading=lazy, width=45% }
+![](images/raspi/image2.png){ loading=lazy, width=45% }
 
 
 For operating system, select `RASPBERRY PI OS LITE (64-BIT)`.  
 it can be found in the `Raspberry Pi OS (other)` section.
 
-![](https://bucket-neu-2.s3.us-east-1.amazonaws.com/images/raspi/image6.png){ loading=lazy, width=45% }
-![](https://bucket-neu-2.s3.us-east-1.amazonaws.com/images/raspi/image5.png){ loading=lazy, width=45% }
+![](images/raspi/image6.png){ loading=lazy, width=45% }
+![](images/raspi/image5.png){ loading=lazy, width=45% }
 
 Select the SD card you inserted as the media to be flashed.  
 Click `Next`  
 Click `Edit Settings`  
 
-![](https://bucket-neu-2.s3.us-east-1.amazonaws.com/images/raspi/image3.png){ loading=lazy, width=45% }
+![](images/raspi/image3.png){ loading=lazy, width=45% }
 
 Set the user and password. `pi` and `pi` are normally fine defaults.
 Confirm the wifi credentials are correct.
 
-![](https://bucket-neu-2.s3.us-east-1.amazonaws.com/images/raspi/image4.png){ loading=lazy, width=45% }
+![](images/raspi/image4.png){ loading=lazy, width=45% }
 
 On the Services tab, enable SSH
 
-![](https://bucket-neu-2.s3.us-east-1.amazonaws.com/images/raspi/image7.png){ loading=lazy, width=45% }
+![](images/raspi/image7.png){ loading=lazy, width=45% }
 
 Click `Save` and then `Yes`
 

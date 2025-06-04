@@ -15,7 +15,7 @@ Print four anchors total, you can select either the corner, flat-left, or flat-r
 
 For example, the following room would require two corner variants, a flat left variant, and a flat right variant.
 
-![](https://bucket-neu-2.s3.us-east-1.amazonaws.com/images/print/image6.png){ loading=lazy, width=45% }
+![](images/print/image6.png){ loading=lazy, width=45% }
 
 
 ### Back plate (1x)  
@@ -26,7 +26,7 @@ For example, the following room would require two corner variants, a flat left v
  - Color irrelevant  
 
 There is built in support bridge near the top for the U-shaped slot for the DC barrel jack to print on. You should trim away the bridge from the DC barrel jack slot after printing.  
-![](https://bucket-neu-2.s3.us-east-1.amazonaws.com/images/print/image2.png){ loading=lazy, width=45% }
+![](images/print/image2.png){ loading=lazy, width=45% }
 
 ### Cover Top (1x)  
 
@@ -47,12 +47,12 @@ The matching bottom plate of the cover variant you are printing.
 
 === "Corner variant cover glue-up"
 
-	![](https://bucket-neu-2.s3.us-east-1.amazonaws.com/images/print/image4.png){ loading=lazy, width=45% }
+	![](images/print/image4.png){ loading=lazy, width=45% }
     
    
 === "Flat variant cover glue-up"
    
-    ![](https://bucket-neu-2.s3.us-east-1.amazonaws.com/images/print/image5.png){ loading=lazy, width=45% }
+    ![](images/print/image5.png){ loading=lazy, width=45% }
 
 ### Retainer (1x)  
 
@@ -107,7 +107,7 @@ There are sacrificial objects on the sides that support a 1 layer bridge.
 You should remove them and trim away the bridge after printing  
 A brim is not necessary, and would be hard to remove from the narrow areas of this part, except for around those sacrificial supports. Because they are small and isolated and could become detached.
 
-![](https://bucket-neu-2.s3.us-east-1.amazonaws.com/images/print/image3.png){ loading=lazy, width=45% }
+![](images/print/image3.png){ loading=lazy, width=45% }
 
 ### Camera mount (1x)  
 
@@ -186,7 +186,7 @@ This is not a mirror image of the other finger, it’s a different shape.
  - Either print in multicolor with this [bambu 3mf file](gripper_shells.3mf), so that the aruco markers are rendered in black and white plastic,  
  - Or print in white, and print the corresponding pages from the aruco marker document on sticker paper and stick them on.
 
-![](https://bucket-neu-2.s3.us-east-1.amazonaws.com/images/print/image1.png){ loading=lazy, width=45% }
+![](images/print/image1.png){ loading=lazy, width=45% }
 
 ## Gantry  
 

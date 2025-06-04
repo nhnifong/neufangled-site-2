@@ -2,17 +2,17 @@ import os
 import re
 from mkdocs.utils import log
 
-s3_base_url = "https://bucket-neu-2.s3.us-east-1.amazonaws.com"
+s3_base_url = "https://bucket-neu-2.s3.us-east-1.amazonaws.com/docs"
 asset_dirs = ['assets', 'images']
 
 def on_page_markdown(markdown, page, config, files):
     """
     Replaces local asset paths with S3 URLs when in production build.
     """
-    # Only run if MKDOCS_ENV is set to 'production' and S3_BASE_URL is provided
-    # if os.environ.get('MKDOCS_ENV') != 'production' or not self.config['s3_base_url']:
-    #     log.debug("LFS S3 Replacer: Not in production environment or S3_BASE_URL not set. Skipping URL replacement.")
-    #     return markdown
+    # Only run if MKDOCS_ENV is set to 'github' and S3_BASE_URL is provided
+    if os.environ.get('MKDOCS_ENV') != 'github' or not self.config['s3_base_url']:
+        log.debug("URL Replacer: Not in production environment or S3_BASE_URL not set. Skipping URL replacement.")
+        return markdown
 
     # Regex to find Markdown image and link patterns
     # ![](images/ag/image4.png){}
