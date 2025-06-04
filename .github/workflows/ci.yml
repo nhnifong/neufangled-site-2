@@ -28,7 +28,7 @@ jobs:
           S3_BUCKET_NAME="${{ secrets.S3_BUCKET_NAME }}"
 
           echo "Listing Git LFS files..."
-          # Get a list of files tracked by Git LFS. '-n' lists just the paths.
+          # Get a list of files tracked by Git LFS. '-n' lists just the paths. h
           LFS_FILES=$(git lfs ls-files -n)
 
           if [ -z "$LFS_FILES" ]; then
