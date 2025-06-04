@@ -25,7 +25,7 @@ jobs:
 
       - name: Sync Git LFS files to S3
         run: |
-          S3_BUCKET_NAME="${{ secrets.S3_LFS_BUCKET_NAME }}"
+          S3_BUCKET_NAME="${{ secrets.S3_BUCKET_NAME }}"
 
           echo "Listing Git LFS files..."
           # Get a list of files tracked by Git LFS. '-n' lists just the paths.
