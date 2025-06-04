@@ -18,7 +18,7 @@ First you should have printed the parts according to the [print guide](print_gui
 
 Print the long hexagonal screwdriver bit holder. You will need a brim when printing it. Most precision screwdrivers come with a set of bits with 4mm hex shanks. This is designed to fit those but be long enough to be held in a drill from the outside of this frame.
 
-![](https://bucket-neu-2.s3.us-east-1.amazonaws.com/images/ag/image4.png){ loading=lazy, width=45% }
+![](images/ag/image4.png){ loading=lazy, width=45% }
 
 Glue the two sides of the spool together with the grooved wheel on the outside. Use small dabs of superglue around the ‘shelf’ on the spool where the solvent would be able to evaporate more easily.
 

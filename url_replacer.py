@@ -14,17 +14,9 @@ def on_page_markdown(markdown, page, config, files):
     #     log.debug("LFS S3 Replacer: Not in production environment or S3_BASE_URL not set. Skipping URL replacement.")
     #     return markdown
 
-    log.info(f"LFS S3 Replacer: Running in production. S3 Base URL: {s3_base_url}")
-
-    # Regex to find Markdown image and link patterns: ![alt](path) and [text](path)
-    # It captures the path inside the parentheses.
-    # It looks for paths that start with one of the configured asset_dirs.
-    # This assumes your Markdown links look like: ![img](../assets/my_image.png) or [file](../assets/my_file.zip)
-    # This regex supports both relative `../assets/` and absolute `/assets/` linking for assets.
-    
-    # This pattern matches any relative path OR absolute path starting with asset_dirs
-    # Example: (../assets/image.png) or (/assets/image.png)
-    pattern = re.compile(r'(!?\[.*?\]\()(?P<path>(?:(?:(?:[a-zA-Z0-9_\-\.]+/?)+\/)?(?:' + '|'.join(re.escape(d) for d in asset_dirs) + r')(?:\/[^)]+)?))(\))')
+    # Regex to find Markdown image and link patterns
+    # ![](images/ag/image4.png){}
+    pattern = re.compile(r"(!\[.*\]\()(?P<path>(?:assets|images).+)(\)\{.*\})")
 
     def replace_url(match):
         original_path = match.group('path') # The path captured by the regex
@@ -36,10 +28,4 @@ def on_page_markdown(markdown, page, config, files):
         return f"{match.group(1)}{s3_url}{match.group(3)}"
 
     new_markdown = pattern.sub(replace_url, markdown)
-
-    if new_markdown != markdown:
-        log.info(f"LFS S3 Replacer: Replaced URLs on page {page.url}")
-    else:
-        log.debug(f"LFS S3 Replacer: No URLs replaced on page {page.url}")
-
     return new_markdown
