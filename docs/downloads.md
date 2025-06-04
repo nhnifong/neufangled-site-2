@@ -23,4 +23,4 @@ CAD for this project was done in Onshape
 
 ## BOM
 
-**[Bill Of Materials V4.5.4](https://docs.google.com/spreadsheets/d/1kLsbVjql81v7XJIGpkoWXCpJR9cWpTetd8mgG_NxFNU/edit?usp=sharing)
+**[Bill Of Materials V4.5.4](https://docs.google.com/spreadsheets/d/1kLsbVjql81v7XJIGpkoWXCpJR9cWpTetd8mgG_NxFNU/edit?usp=sharing)**
