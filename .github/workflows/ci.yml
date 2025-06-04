@@ -1,0 +1,74 @@
+name: ci 
+on:
+  push:
+    branches:
+      - master 
+      - main
+permissions:
+  contents: write
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+
+      - uses: actions/checkout@v4
+        with:
+          lfs: true
+          fetch-depth: 0
+
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ secrets.AWS_REGION }} # Use the region from your GitHub Secret
+
+      - name: Sync Git LFS files to S3
+        run: |
+          S3_BUCKET_NAME="${{ secrets.S3_LFS_BUCKET_NAME }}"
+
+          echo "Listing Git LFS files..."
+          # Get a list of files tracked by Git LFS. '-n' lists just the paths.
+          LFS_FILES=$(git lfs ls-files -n)
+
+          if [ -z "$LFS_FILES" ]; then
+            echo "No Git LFS files found to upload."
+          else
+            echo "Found Git LFS files:"
+            echo "$LFS_FILES"
+
+            echo "Uploading LFS files to s3://$S3_BUCKET_NAME/..."
+            echo "$LFS_FILES" | while IFS= read -r lfs_file; do
+              # the file paths in the bucket will match their paths relative to the repo root.
+              # Use 'aws s3 cp' to copy each file.
+              # --acl public-read is important if you want them publicly accessible via URL.
+              aws s3 cp "$lfs_file" "s3://$S3_BUCKET_NAME/$lfs_file" --acl public-read
+              if [ $? -ne 0 ]; then
+                echo "::error::Failed to upload $lfs_file to S3."
+                exit 1 # Fail the step if any upload fails
+              fi
+            done
+            echo "All Git LFS files uploaded to S3 successfully."
+          fi
+
+      - name: Configure Git Credentials
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: 3.x
+
+      - run: echo "cache_id=$(date --utc '+%V')" >> $GITHUB_ENV 
+
+      - uses: actions/cache@v4
+        with:
+          key: mkdocs-material-${{ env.cache_id }}
+          path: .cache 
+          restore-keys: |
+            mkdocs-material-
+
+      - run: pip install -r requirements.txt
+
+      - run: mkdocs gh-deploy --force
