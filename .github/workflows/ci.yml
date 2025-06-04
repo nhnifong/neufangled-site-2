@@ -9,6 +9,10 @@ permissions:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pages: write    # Required for deploying to GitHub Pages
+      id-token: write # Required for deploying to GitHub Pages
     steps:
 
       - uses: actions/checkout@v4
