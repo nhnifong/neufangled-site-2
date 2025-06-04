@@ -13,6 +13,8 @@ jobs:
       contents: write
       pages: write    # Required for deploying to GitHub Pages
       id-token: write # Required for deploying to GitHub Pages
+    env:
+      MKDOCS_ENV: "github"
     steps:
 
       - uses: actions/checkout@v4
