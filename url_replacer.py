@@ -10,8 +10,8 @@ def on_page_markdown(markdown, page, config, files):
     Replaces local asset paths with S3 URLs when in production build.
     """
     # Only run if MKDOCS_ENV is set to 'github' and S3_BASE_URL is provided
-    if os.environ.get('MKDOCS_ENV') != 'github' or not self.config['s3_base_url']:
-        log.debug("URL Replacer: Not in production environment or S3_BASE_URL not set. Skipping URL replacement.")
+    if os.environ.get('MKDOCS_ENV') != 'github':
+        log.info("URL Replacer: Not in production environment or S3_BASE_URL not set. Skipping URL replacement.")
         return markdown
 
     # Regex to find Markdown image and link patterns

@@ -78,6 +78,11 @@ jobs:
       - name: Build MkDocs site
         run: mkdocs build
 
+      - name: Remove large files from site dir before pushing to github pages
+        run: |
+          rm site/assets/*.zip
+          rm -r site/images/*
+
       - name: Upload GitHub Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
