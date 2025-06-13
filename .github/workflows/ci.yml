@@ -77,6 +77,9 @@ jobs:
 
       - run: pip install -r requirements.txt
 
+      - name: Run wireviz
+        run: wireviz wires.yml
+
       - name: Build MkDocs site
         run: mkdocs build
 
