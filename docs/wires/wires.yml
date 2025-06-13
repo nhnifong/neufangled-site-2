@@ -32,7 +32,7 @@ connectors:
   Anchor-ras:
     type: Dupont 2.54
     subtype: female
-    pinlabels: [RX, TX, GND, 5V]
+    pinlabels: [GPIO1, GND, RX, TX, GND, 5V]
 
   MKS-Serial:
     type: Dupont 2.0
@@ -72,8 +72,8 @@ cables:
   W6:
     gauge: 28 awg
     length: 20 cm
-    colors: [BU,OG,BK,RD]
-    wirecount: 4
+    colors: [BU,OG,BK,RD,GN,GN]
+    wirecount: 6
 
 connections:
   -
@@ -98,5 +98,5 @@ connections:
     - W6:   [1,2]
     - MKS-Serial:   [2,1]
   -
-    - Anchor-ras: [3,4]
-    - W6:   [3,4]
+    - Anchor-ras: [3,4,5,6]
+    - W6:   [3,4,5,6]
