@@ -9,14 +9,17 @@ Drive gears would be ideal with really good PLA, such as [overture pla professio
 ### Screw tool
 
  - 100% infill. print on side with a brim.
+ - You only need one for the whole build
+ - painted ear brims are all you need to stop it warping up.
 
 ## Anchor Assembly (4x)  
 Print four anchors total, you can select either the corner, flat-left, or flat-right variant. Corner variants are meant to be mounted in a wall corner. Flat variants are mounted on a flat wall, with the camera either looking 45 degrees to the left or the right. The camera needs to face into the middle of the work area. Examine your space and determine which types you need. The back plate and cover parts are the only part that differ between the variants.
 
 For example, the following room would require two corner variants, a flat left variant, and a flat right variant.
 
-![](images/print/image6.png){ loading=lazy, width=45% }
+![](images/print/image9.png){ loading=lazy, width=45% }
 
+The Anchor folder contains the common parts for all anchor variants, and then the variant specific parts in subfolders.
 
 ### Back plate (1x)  
 
@@ -32,7 +35,9 @@ There is built in support bridge near the top for the U-shaped slot for the DC b
 
 There is a cover type (corner or flat) for each anchor back plate type. It is divided into two pieces which glue together, called Cover Top and Cover Bottom.
 
- - 2 walls, rectilinear infill, 10%, 10mm brim, just to prevent corner lifting.
+ - 2 walls
+ - rectilinear infill, 10%,
+ - 10mm brim to prevent corner lifting.
  - Print on the widest face.
  - White or beige color
 
@@ -40,9 +45,13 @@ There is a cover type (corner or flat) for each anchor back plate type. It is di
 
 The matching bottom plate of the cover variant you are printing.
 
- - 2 walls, rectilinear infill, 10%, 10mm brim, just to prevent corner lifting.
+ - 2 walls
+ - rectilinear infill, 10%,
+ - 10mm brim to prevent corner lifting.
  - Print on the widest face.
  - White or beige color
+
+![](images/print/image8.png){ loading=lazy, width=45% }
 
 
 === "Corner variant cover glue-up"
@@ -58,33 +67,22 @@ The matching bottom plate of the cover variant you are printing.
 
 A small retainer to hold the spool bearing in.
 
- - 10mm brim  
+ - 10mm brim if if your printer needs it for small items
 
-### Spacer (1x)  
+### Lever (1x)  
 
- - 10mm brim  
+ - 10mm brim if your printer needs it for small items
+ - print on the flat flace that doesn't have a bevel next to it.
 
 ### Spool side A (1x)  
 
- - No brim  
- - Gear cup faces up  
+ - No brim
 
 ### Spool side B (1x)  
 
  - No brim
 
-### Stepper drive gear (1x)  
-
- - **3 walls, cubic infill (20%). NO brim**  
- - No supports.  
- - Color irrelevant.  
- - Use something good like overture PLA professional
-
-### 2 mil spacer (4x)  
-### 9 mil spacer (4x)  
-
- - Brim because it’s tiny  
- - These are for mounting the raspi and hat
+![](images/print/image1.png){ loading=lazy, width=45% }
 
 ## Gripper Assembly (1x)
 
@@ -108,6 +106,20 @@ You should remove them and trim away the bridge after printing
 A brim is not necessary, and would be hard to remove from the narrow areas of this part, except for around those sacrificial supports. Because they are small and isolated and could become detached.
 
 ![](images/print/image3.png){ loading=lazy, width=45% }
+
+### Spool A (1x)  
+
+ - 2 walls, cubic infill (10%).
+ - No brim.
+ - No supports.  
+ - Color irrelevant.
+
+### Spool B (1x)  
+
+ - 2 walls, cubic infill (10%).
+ - No brim.
+ - No supports.  
+ - Color irrelevant.
 
 ### Camera mount (1x)  
 
@@ -178,28 +190,37 @@ This is not a mirror image of the other finger, it’s a different shape.
  - No brim because it’s a gear. If it comes unstuck try again. It only takes a few minutes to print.  
  - Its too small for infill to matter.  
 
-### Aruco shell front (1x)  
-### Aruco shell back (1x)  
+### Shell front (1x)
 
- - 2 walls,15mm brim  
+ - auto tree supports
+ - 2 walls
+ - infill irrelevant
+ - print on the face above the forehead shown in image
+ - Use the color you want your gripper to show on the exterior
+
+![](images/print/image6.png){ loading=lazy, width=45% }
+
+### Shell back (1x)  
+
+ - No supports
+ - 2 walls
  - Infill is irrelevant  
- - Either print in multicolor with this [bambu 3mf file](gripper_shells.3mf), so that the aruco markers are rendered in black and white plastic,  
- - Or print in white, and print the corresponding pages from the aruco marker document on sticker paper and stick them on.
+ - print on the upper back face shown in the image
+ - Use the color you want your gripper to show on the exterior
 
-![](images/print/image1.png){ loading=lazy, width=45% }
+![](images/print/image7.png){ loading=lazy, width=45% }
 
 ## Gantry  
 
-### Anchor face negative (1x)  
+### Shaped guide (1x)  
 
  - 2 walls, rectilinear infill (10%). **Inner AND outer 10mm brim**  
- - No supports.  
+ - No supports.
  - White  
- - Print on the largest face  
+ - Print on the largest face
 
 ### Aruco display box (1x)  
 
  - 2 walls, rectilinear infill (10%). 10mm brim  
  - No supports  
- - Either print in multicolor using the provided bambu 3mf file, so that the aruco markers are rendered in black and white plastic,  
-Or print in white, and print the corresponding pages from the aruco marker document on sticker paper and stick them on.
+ - print in white
