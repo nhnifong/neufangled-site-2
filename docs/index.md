@@ -2,7 +2,7 @@
 
 Stringman Pilot Launch
 
-    demo video placeholder
+<iframe width="100%" height="660" src="https://www.youtube.com/embed/KrH8pqbdQYQ?si=1y6GPm0TSk74445p" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ![Image](images/PXL_20250318_233318194.jpg)
 
