@@ -111,7 +111,7 @@ Spin your spool slowly and confirm it makes a full rotation without excessive fr
 ## For power anchors only
 
 **One** of the anchors in your robot needs to supply power to the gripper. It doesn’t matter which one, but you need to install slip ring at this point before too many other things get in the way.
-Power is supplied to the gripper via a pvc sheathed wire that takes the place of the fishing line, and is transferred via a slip ring at each end.  
+Power is supplied to the gripper via a wire that takes the place of the fishing line, and is transferred via a slip ring at each end.  
 Take a slip ring and identify the wires that come out of the rotor. Insert these two wires into the metal tube that leads into the center of the spool.
 
 ![](images/ag/image46.png){ loading=lazy, width=45% }
