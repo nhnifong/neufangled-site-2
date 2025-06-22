@@ -16,7 +16,7 @@ def on_page_markdown(markdown, page, config, files):
 
     # Regex to find Markdown image and link patterns
     # ![](images/ag/image4.png){}
-    pattern = re.compile(r"(!\[.*\]\()(?P<path>(?:assets|images).+)(\)(?:\{.*\})?)")
+    pattern = re.compile(r"(!?\[.*\]\()(?P<path>(?:assets|images).+)(\)(?:\{.*\})?)")
 
     def replace_url(match):
         original_path = match.group('path') # The path captured by the regex
