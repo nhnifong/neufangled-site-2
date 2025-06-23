@@ -141,6 +141,18 @@ A brim is not necessary, and would be hard to remove from the narrow areas of th
  - No supports.  
  - Color irrelevant.  
 
+### Tall Spacer (4x)  
+
+ - 2 walls
+ - No brim  
+ - Very small object, slow down first layer if needed.  
+
+### Short Spacer (4x)  
+
+ - 2 walls
+ - No brim  
+ - Very small object, slow down first layer if needed.  
+
 ### Rod (4x)  
 
  - 2 walls, cubic infill (10%). 5mm brim  
