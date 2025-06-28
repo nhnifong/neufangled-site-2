@@ -21,7 +21,7 @@ First you should have printed the parts according to the [print guide](print_gui
 
 ## Fingers
 
-Attach a rod to the side of a finger pad. The rod has one one location with an indentation for a bolt head. Insert an M3x14 bolt of any head type into this indentation, followed by a washer, then from the outside into the upper hole on the fingerpad (the one sized for m3), then a washer, then an m3 nylock nut. Tighten until no slack remains, then back off until the rod can swing loosely with no out of plane motion. Repeat for all four rods on both finger-pads.
+Attach a rod to the side of a finger pad. The rod has one one location with an indentation for a bolt head. Insert an M3x14 bolt into this indentation, followed by a washer, then from the outside into the upper hole on the fingerpad (the one sized for m3), then a washer, then an m3 nylock nut. If the hole in either the rod or finger ended up small enough for the bolt to cut threads, just overotate the bolt to tear a smooth hole. Tighten the nylock nut until no slack remains, then back off until the rod can swing loosely with no out of plane motion. Repeat for all four rods on both finger-pads.
 
 ![](images/grip/image9.png){ loading=lazy, width=45% }
 ![](images/grip/image49.png){ loading=lazy, width=45% }
@@ -30,7 +30,7 @@ Press fit two bearings into each geared lever
 
 ![](images/grip/image53.png){ loading=lazy, width=45% }
 
-Orient a finger-pad with the hex cutout on top. The flat side of the lever should align with the flat side of the finger. The wire should be also freely coming out of the flat side, not pinched between.  
+Orient a finger-pad with the hex cutout on top. The flat side of the lever should align with the flat side of the finger.
 Insert an M4x25 bolt into the finger-pad just from the bottom, place an M4 washer on. Slide in the geared lever with the bearing face up into the slot.  
 If you are able to, try to get another M4 washer into the gap as the bolt comes through. (its not crucial but reduces play. I have found it easier if using a pocket knife to push the washer in from the side while viewing down the hole from the top)  
 Secure it with an M4 nut in the cutout. Tighten and then back off just until the mechanism moves freely. Repeat with the other finger.
@@ -42,14 +42,19 @@ Secure it with an M4 nut in the cutout. Tighten and then back off just until the
 
 Confirm everything you assembled is oriented just as pictured.
 
-Cut two lengths of 28 AWG wire and strip the ends. Solder them to the two leads of the pressure sensing thin film resistor.
+Locate the partially assembled pressure sense connector. It can be identified by the exposed resistor.
 
 ![](images/grip/image3.png){ loading=lazy, width=45% }
+
+Feed the wires through the small hole on the side of geared\_lever\_right, pushing them down the channel, till they pop out of the face near the finger pad.
+put them all they way through.
+
 ![](images/grip/image64.png){ loading=lazy, width=45% }
 
-Feed the wires through the channel in the center of geared\_lever\_right.  
-Remove the adhesive backing and stick the sensor in the center of the finger pad
+Strip the ends of the wires, solder the pressure sense resistor to the wires in such a way that they are not twisted. there is no polarity, but there is not enough room for a twist.  
+Remove the adhesive backing and stick the sensor in the center of the finger pad, feeding any excess wire back through the channel.
 
+![](images/grip/image72.png){ loading=lazy, width=45% }
 ![](images/grip/image70.png){ loading=lazy, width=45% }
 
 Cover the face of the finger in adhesive backed foam and trim it to size.  
@@ -65,19 +70,19 @@ After printing, tear the ears off the mechanism lid print. Clean up the area the
 
 ![](images/grip/image41.png){ loading=lazy, width=45% }
 
-Insert two M4x25 bolts into the back plate from the bottom, hold them in as you place it on the table. Followed by two M4 washers.  
+Insert two M4x25 bolts into the back plate from the bottom, hold them in as you place it on the table. Followed by two M4 washers.
 Mesh the two geared levers together in the closed position, making sure they are aligned correctly. They must remain meshed the entire time. Use a rubber band to hold them together if necessary.  
-Feed the wire through the corresponding smile hole, and place the fingers on the bolts simultaneously, keeping them meshed.  
+Feed the plug of the pressure sense wire through the corresponding smile shaped slot, and place the fingers on the bolts simultaneously, keeping them meshed.
 Place M4 washers over the bolts after they protrude from the fingers.
 
 ![](images/grip/image1.png){ loading=lazy, width=45% }
-![](images/grip/image61.png){ loading=lazy, width=45% }
+![](images/grip/image73.png){ loading=lazy, width=45% }
 
 ![](images/grip/image52.png){ loading=lazy, width=45% }
 ![](images/grip/image45.png){ loading=lazy, width=45% }
 
 Press the small 9-tooth gear into the mouse wheel encoder.  
-Locate the 6-pin JST-SH 1.0 pitch connector. Trim off all **except** the red, black, and yellow wires.  
+Locate the 6-pin JST-SH 1.0 pitch connector that has three untrimmed wires, the red, black, and yellow.  
 Solder the connector to the mouse wheel encoder according to the picture
 
 ![](images/grip/image63.png){ loading=lazy, width=45% }
@@ -96,7 +101,7 @@ Pressing these together is ideally done with a vice but is possible by hand.
 ![](images/grip/image71.png){ loading=lazy, width=45% }
 ![](images/grip/image44.png){ loading=lazy, width=45% }
 
-Place a M3x6 button head screw upside down in the hole on the other side of the spool. Place one of the servo horn discs labeled “2” from the Injora motor box, over the screw, flat side down. Secure it with two M2.5x6 screws
+Place a M3x6 button head screw upside down in the hole on the other side of the spool. Place one of the servo horn discs from the Injora motor box, over the screw, flat side down. Secure it with two M2.5x6 screws
 
 ![](images/grip/image16.png){ loading=lazy, width=45% }
 ![](images/grip/image30.png){ loading=lazy, width=45% }
@@ -122,7 +127,7 @@ Place the standoff onto the motor in the pictured orientation.
 ![](images/grip/image33.png){ loading=lazy, width=45% }
 
 Manually rotate the spool so that the side hole shows through the window. It’s easier to do it before connecting the motor.  
-Install the motor onto the spool by aligning the toothed shaft. Tighten the screw we embedded earlier with an allen key from the other side of the spool.
+Install the motor onto the spool by aligning the toothed shaft. Tighten the screw you embedded in the spool earlier with an allen key from the other side of the spool.
 
 ![](images/grip/image36.png){ loading=lazy, width=45% }
 ![](images/grip/image10.png){ loading=lazy, width=45% }
@@ -131,13 +136,13 @@ Secure the motor and standoff to the back plate using four M3x16 screws
 
 ![](images/grip/image22.png){ loading=lazy, width=45% }
 
-Unpack one Camera Module and install the mini cable. (golden one) the wide end of the mini ribbon cable plugs in the camera, with its black face on the camera’s back side. The plastic retaining clips is pulled out to loosen a ribbon cable, and pushed in to secure one.  
+Unpack one Camera Module and install the mini cable. (golden one) the wide end of the mini ribbon cable plugs in the camera, with its black face on the camera’s back side. The plastic retaining clip is pulled out to loosen a ribbon cable, and pushed in to secure one.  
 screw the camera to the camera mount with two M2x4 bolts in opposite corners. Make sure the ribbon is in the pictured direction.
 
 ![](images/grip/image13.png){ loading=lazy, width=45% }
 ![](images/grip/image2.png){ loading=lazy, width=45% }
 
-Attach the camera mount assembly to the back plat with an M3x6 countersunk screw.
+Attach the camera mount assembly to the back plate with an M3x6 countersunk screw.
 
 ![](images/grip/image35.png){ loading=lazy, width=45% }
 
@@ -182,32 +187,30 @@ Very carefully and gently pull out both sides of the black retaining clip in the
 
 ![](images/grip/image26.png){ loading=lazy, width=45% }
 
-How about something easy. Plug in the cable for the encoder into motor port A, and the winch servo into servo port 1\.
+How about something easy. Plug in the cable for the encoder into motor port A, and the winch servo into servo port 1.
 
 ![](images/grip/image23.png){ loading=lazy, width=45% }
-
-Alright back to hard stuff. We need to make a 3 pin dupont connector for the wires of the pressure sensor that creates a voltage divider with a 2.2kΩ resistor.  
-Trim the sensor wires back to a reasonable length, taking into account that they move as the fingers open and close.  
-Using the provided parts for 3 pin dupont connectors, crimp a female pin on one sensor wire, a female pin on one end of the 2.2kΩ resistor, and the last pin on both the remaining wire and the other end of the resistor. This will be the sense wire and will connect to the analog GPIO pin of the inventor hat mini.  
-Insert them into the connector housing in the order pictured.   
-Plug this into the inventor hat mini in GPIO port 1\. Note the direction with GND on the edge of the board and signal towards the middle.  
+ 
+Plug the pressure sense plug into the inventor hat mini in GPIO port 1. Note the direction with GND on the edge of the board and signal towards the middle.  
 ![](images/grip/image38.png){ loading=lazy, width=45% }
 ![](images/grip/image55.png){ loading=lazy, width=45% }
 
-Solder the signal and ground wires from a 3 pin dupont connector (trim and discard the one in the middle) to the pictured leads of a microswitch.
 
-Attach the microswitch to the mechanism lid near the top of the gripper with two M2x10 screws in the pictured orientation.  
-Feed the dupont connector through the hole in the body and connect it to the inventor hat mini’s GPIO port 2\. Direction doesn’t matter.
+Attach the microswitch to the mechanism lid near the top of the gripper with two M2.5x10 screws in the pictured orientation.  
+Locate the pictured connector. It is a 3-pin dupont connector with wires only in the outer two slots.
+Strip and solder the wires to the two contacts of the microswitch closer to the hinge end.
+Feed the dupont connector through the hole in the body and connect it to the inventor hat mini’s GPIO port 2. Direction doesn’t matter.
 
 ![](images/grip/image24.png){ loading=lazy, width=45% }
 ![](images/grip/image57.png){ loading=lazy, width=45% }
+![](images/grip/image74.png){ loading=lazy, width=45% }
 
 We have two additional sensors to connect. The IMU is the purple one, and the rangefinder is the black one with the little window. These will be on the I2C bus, but we have only one stemma port so you’ve been provided with a pre-made connector to chain them together.  
 Solder a 4 pin straight header to the pins on the IMU that correspond to VCC thru SDA. And another 4 pin straight header on the VCC thru SCL pins of the rangefinder.
 
 ![](images/grip/image54.png){ loading=lazy, width=45% }
 
-Attach the rangefinder to the frame with two M2x6 screws.  
+Attach the rangefinder to the frame with two M2x4 screws.  
 Attach the IMU to the frame with two M3x4 screws.  
 Plug in the 4-pin dupont connector that has doubles coming out of it into the IMU. VCC ond the end  
 Plug the 4-pin dupond connector with singles into the rangefinder. VCC on the end.  
@@ -216,8 +219,9 @@ Feed the white connector through the hole to the other side and connect it to th
 ![](images/grip/image27.png){ loading=lazy, width=45% }
 ![](images/grip/image31.png){ loading=lazy, width=45% }
 
-Locate the larger DC-DC buck converter. This will take the 24v coming through the slip ring and convert it to 6v for the servos.  
-Solder 15cm of the 22awg silicone red black pair to the output side. Solder 15cm of 28awg red and black wire to the input side. This isn't an input technically, just a take-off to another regulator we will add next for the microcontroller.
+Locate the larger DC-DC buck converter. This will take the 24v coming through the slip ring and convert it to 6v for the servos.
+In our hardware kit, it is already tuned for 6v, but if you bought your own, tune it now.
+Solder 15cm of 28awg silicone red black pair to the output side and 15cm to the input side. This isn't an input technically, just a take-off to another regulator we will add next for the microcontroller.
 
 ![](images/grip/image51.png){ loading=lazy, width=45% }
 
@@ -234,7 +238,7 @@ Here you can see I temporarily disconnected the connector for the rangefinder si
 Flip the gripper over and position it so that the two 28 awg red and black wires that we fed through the hole before are in reach of your helping hands and soldering iron.  
 Note that these are the smaller wires we connected to the \*input\* side of the buck converter along with the slip ring wires. They carry 24v.  
 Solder these to the input of one of the small green buck converters.  
-Strip a 2cm piece of solid core wire so that one end has about 80mm of exposed core to use as a pin. Solder the short stripped end to the output vcc of this small converter.
+Strip a 2cm piece of solid core wire so that one end has about 6mm of exposed core to use as a pin. Solder the short stripped end to the output vcc of this small converter.
 
 ![](images/grip/image25.png){ loading=lazy, width=45% }
 
@@ -254,7 +258,7 @@ Maybe in the future I will deliver 5v to the raspberry pi in some saner way like
 ## Drive Gear
 
 Prepare the drive gear.
-Set an M3x6 button head screw in the indentation upside down, and then trap it there by screwing on the servo horn disc just as you did with the spool. Use the disc labeled “2”. Secure with two M2.5x6 screws
+Set an M3x6 button head screw in the indentation upside down, and then trap it there by screwing on a servo horn disc just as you did with the spool. Secure with two M2.5x6 screws
 
 ![](images/grip/image29.png){ loading=lazy, width=45% }
 
@@ -267,32 +271,36 @@ Insert an M4x12 screw into the back plate in this hole, screwing it in just unti
 ![](images/grip/image5.png){ loading=lazy, width=45% }
 ![](images/grip/image65.png){ loading=lazy, width=45% }
 
-Connect the unit to 24v power temporarily. The easiest way to do this is to solder a dc barrel jack on the two leads that come from the spool’s side hole.  
-Find out the raspberry pi’s ip address on your network.  
-SSH into it with  
+The drive gear servo must be installed in the fully open position. If you have a servo tester you can command the servo to move to it's lowest value. Otherwise, you can use the rasberry pi, but it's more involved.
 
-    ssh pi@192.160.1.156  
+??? example "Using the raspberry pi to manually move the servo"
 
-Or whatever username and password you chose when creating the image.  
-Clone [cranebot-firmware](https://github.com/nhnifong/cranebot3-firmware)
+	Connect the unit to 24v power temporarily. The easiest way to do this is to solder a dc barrel jack on the two leads that come from the spool’s side hole.  
+	Find out the raspberry pi’s ip address on your network.  
+	SSH into it with  
 
-    git clone https://github.com/nhnifong/cranebot3-firmware.git
-	cd cranebot3-firmware
-	python3 -m venv --system-site-packages venv
-	source venv/bin/activate
-	pip3 install -r requirements_raspi.txt
+	    ssh pi@192.160.1.156  
 
-Start a python shell in the virtual environment  
+	Or whatever username and password you chose when creating the image.  
+	Clone [cranebot-firmware](https://github.com/nhnifong/cranebot3-firmware)
 
-    from inventorhatmini import InventorHATMini, SERVO_2  
-    hat = InventorHATMini(init_leds=False)
+	    git clone https://github.com/nhnifong/cranebot3-firmware.git
+		cd cranebot3-firmware
+		python3 -m venv --system-site-packages venv
+		source venv/bin/activate
+		pip3 install -r requirements_raspi.txt
 
-To manually control the grip servo you can send \-90 for full open, or 90 for full closed.  
-Set a value of negative \-90  
+	Start a python shell in the virtual environment  
 
-    hat.servos[SERVO_2].value(-90)  
+	    from inventorhatmini import InventorHATMini, SERVO_2  
+	    hat = InventorHATMini(init_leds=False)
 
-![](images/grip/image40.png){ loading=lazy, width=45% }
+	To manually control the grip servo you can send \-90 for full open, or 90 for full closed.  
+	Set a value of negative \-90  
+
+	    hat.servos[SERVO_2].value(-90)  
+
+	![](images/grip/image40.png){ loading=lazy, width=45% }
 
 Manually open the fingers to the pictured position.  
 Insert the grip servo into its slot, rotated a few degrees to the left (in this position the gear teeth don’t mesh)  
@@ -307,8 +315,13 @@ Close your terminal and power down by pulling the plug
 ![](images/grip/image18.png){ loading=lazy, width=45% }
 ![](images/grip/image47.png){ loading=lazy, width=45% }
 
-The connection to the final power line from the wall is covered in the [Powerline/Gantry Build Guide](power_line_build_guide.md). You can leave it hanging with a DC barrel jack on it for now.  
-The outer shells snap on from the sides, and are secured at the top with four M3x4 screws.  
-They are also installed at the end of power line installation.
+The connection to the final power line from the wall is covered in the [Powerline/Gantry Build Guide](power_line_build_guide.md). You can leave it hanging with a DC barrel jack on it for now.
+
+Print the outer shells in the color of your choice and trim any support material.
+The outer shells press onto each side. each shell half is secured with two M3x4 screws at the top, and one at the bottom.
+They will be removed temporarily during the final installation of the power supply line.
 
 ![](images/grip/image21.png){ loading=lazy, width=45% }
+![](images/grip/image75.png){ loading=lazy, width=45% }
+![](images/grip/image76.png){ loading=lazy, width=45% }
+![](images/grip/image77.png){ loading=lazy, width=45% }
