@@ -128,20 +128,20 @@ Screw a nut onto the DC barrel Jack. (it should come pre-installed, but may fall
 
 ![](images/ag/image22.png){ loading=lazy, width=45% }
 
-Get one small DC step down converter from your kit (the green one).
-Cut two 2.5cm pieces of 28 guage wire or similar and solder them to GND and IN+
-
-![](images/ag/image27.png){ loading=lazy, width=45% }
-![](images/ag/image42.png){ loading=lazy, width=45% }
-
-Locate the long cable that came with the MKS\_SERVO42C. It has two different ends that are mirrors of each other. If you use the end that matches this photo, VIN and GND will be red and black. Cut short all but the power and ground wires. We will not be using the others.  
+Locate the long cable that came with the MKS\_SERVO42C. It has two different ends that are mirrors of each other. You can use either end to make a cable that matches this photo, VIN and GND will be red and black on one end, or yellow and green on the other end. Note the orientation of the white connector in the photo.
+Cut the power and ground wires to 10 cm, and all others to basically zero.
+Solder the black and red leads (or green and yellow) to the barrel jack. (it’s long leg is ground) The motor will receive 24v from this connector.  
 
 ![](images/ag/image43.png){ loading=lazy, width=45% }
 
-Solder the black and red leads also to the barrel jack. (it’s long leg is negative) The motor will receive 24v from this connector.  
-At the same time, connect the step down regulator’s inputs to the 24v of the jack.
+Get one small DC step down converter from your kit (the green one).
+Cut two 2.5cm pieces of 28 guage wire or similar and solder them to GND and IN+.  
+Solder the step down regulator’s inputs to the 24v of the jack.
 
+![](images/ag/image27.png){ loading=lazy, width=45% }
+![](images/ag/image42.png){ loading=lazy, width=45% }
 ![](images/ag/image44.png){ loading=lazy, width=45% }
+
 
 Find one of the pre-made anchor connectors.. The only two hanging wires on these should be the red and the black coming from the 4-pin connector. Solder these to the **output** of the DC step down converter. The converter has only on ground terminal to be used for both input and output, so you may have to solder one of the ground wires by just sticking it to the side of the other.
 
@@ -171,37 +171,45 @@ Use the [raspberry pi sd card imager tool](https://www.raspberrypi.com/software/
 Setting “pi” as the username and password is standard practice for people who know that real security is only possible if you throw all the electronics in the lake
 
 Insert the SD card into the Raspberry Pi Zero 2 W. Install an aluminum heatsink on the SOC.  
-Solder a 4 pin straight header on the pins shown in the image, protruding from the back.
+Solder a 6 pin straight header on the pins shown in the image, protruding from the back.
 
 ![](images/ag/image23.png){ loading=lazy, width=45% }
+![](images/ag/image51.png){ loading=lazy, width=45% }
 
 !!! tip "Note"
 
-    The 4-pin header's long end should come out of the *back* of the Raspberry Pi Zero 2W
+    The 6-pin header's long end should come out of the *back* of the Raspberry Pi Zero 2W
 
-Screw the raspberry pi down to the frame with four m 2.5 x 4 screws. Note the direction in the photo
-
-![](images/ag/image5.png){ loading=lazy, width=45% }
-
-From the back, feed the 4 pin plug to the straight header and connect it with the V+ (red) wire closest to the SD card.
-
-![](images/ag/image7.png){ loading=lazy, width=45% }
-
-Open the Raspberry Pi camera Module 3\. Take care to ground yourself before handling the camera.   
-Take out the “mini” ribbon and connect its wide end to the camera. The black painted side of the ribbon goes towards the back side of the PCB and the gold plated side goes towards the camera lens.  
+Locate one 80mm mini raspi camera cable.
+Open the Raspberry Pi camera Module 3\. Take care to ground yourself before handling the camera. Discard any other ribbons that shipped with the camera.
+Connect the mini ribbon's wide end to the camera. The black painted side of the ribbon goes towards the back side of the PCB and the gold plated side goes towards the camera lens.  
+Connect the mini ribbon's narrow end to the raspberry pi. the black side goes towards the top of the PCB
 To attach a ribbon cable, gently pull out both sides of the plastic retaining clip, insert the ribbon end, and push the retainer back into place.  
-Discard any other ribbons that shipped with the camera.
+Be careful with the raspberry pi’s ribbon cable retention clip, it is extremely delicate.
 
 ![](images/ag/image13.png){ loading=lazy, width=45% }
 ![](images/ag/image34.png){ loading=lazy, width=45% }
 
-Mount the camera with two M2x4 screws with the ribbon facing upwards.
+Place the raspberry pi in the frame as shown. First, make the pin header go through the oval, then slide the upper corner under the slot, then press the lower corner onto the peg.
+Secure with two m2.5 x 6 screws.
+Attach the camera with two M2x4 screws
 
-Fold the ribbon back and forth to fit it entirely inside the frame and connect it to the raspberry pi with the black face up.  
-Be careful with the raspberry pi’s ribbon cable retention clip, it is extremely delicate.
-
+![](images/ag/image5.png){ loading=lazy, width=45% }
 ![](images/ag/image20.png){ loading=lazy, width=45% }
-![](images/ag/imag11.png){ loading=lazy, width=45% }
+
+From the back, feed the 6 pin plug to the straight header and connect it with the V+ (red) wire closest to the SD card.
+
+![](images/ag/image7.png){ loading=lazy, width=45% } 
+
+Insert the steel lever arm of a microswitch into the slot of a printed line position sensing lever.
+Do this while the lever is depressed and hold firmly to avoid bending the metal while pressing it in till it bottoms out.
+Install the switch onto the frame in the position indicated in the image, it should curve upwards and the hole should be centered above the spool.
+
+![](images/ag/image52.png){ loading=lazy, width=45% } 
+![](images/ag/image53.png){ loading=lazy, width=45% } 
+
+Feed the final two loose wires from the back to the front through the hole between the narrow rib and the raspberry pi.
+Cut them to an appropriate length, strip, and solder them to the right two contacts of the micrswitch. polarity is irrelevant.
 
 Assembly is complete\!  
 Plug in your unit to 24v power and confirm both the motor control screen and raspi green light are on.  
