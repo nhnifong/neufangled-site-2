@@ -15,6 +15,9 @@ First you should have printed the parts according to the [print guide](print_gui
  - [Mini side cutters](https://www.amazon.com/dp/B00FZPDG1K)  
  - Super glue ([loctite super glue “professional liquid”](https://www.amazon.com/dp/B07VL6MP94?ref_=ppx_hzsearch_conn_dt_b_fed_asin_title_1&th=1) recommended)
 
+!!! tip "Note"
+
+    The color of the printed parts in this guide varies from image to image because some photos have been re-taken to keep the guide up to date with revisions
 
 Print the long hexagonal screwdriver bit holder. You will need a brim when printing it. Most precision screwdrivers come with a set of bits with 4mm hex shanks. This is designed to fit those but be long enough to be held in a drill from the outside of this frame.
 
@@ -122,49 +125,6 @@ Leave the wires that come out of the spool center hanging for now.
 ![](images/ag/image47.png){ loading=lazy, width=45% }
 ![](images/ag/image48.png){ loading=lazy, width=45% }
 
-## Power supply circuit
-
-Screw a nut onto the DC barrel Jack. (it should come pre-installed, but may fall off in shipping. It’s important this is done before the wiring.
-
-![](images/ag/image22.png){ loading=lazy, width=45% }
-
-Locate the long cable that came with the MKS\_SERVO42C. It has two different ends that are mirrors of each other. You can use either end to make a cable that matches this photo, VIN and GND will be red and black on one end, or yellow and green on the other end. Note the orientation of the white connector in the photo.
-Cut the power and ground wires to 10 cm, and all others to basically zero.
-Solder the black and red leads (or green and yellow) to the barrel jack. (it’s long leg is ground) The motor will receive 24v from this connector.  
-
-![](images/ag/image43.png){ loading=lazy, width=45% }
-
-Get one small DC step down converter from your kit (the green one).
-Cut two 2.5cm pieces of 28 guage wire or similar and solder them to GND and IN+.  
-Solder the step down regulator’s inputs to the 24v of the jack.
-
-![](images/ag/image27.png){ loading=lazy, width=45% }
-![](images/ag/image42.png){ loading=lazy, width=45% }
-![](images/ag/image44.png){ loading=lazy, width=45% }
-
-
-Find one of the pre-made anchor connectors.. The only two hanging wires on these should be the red and the black coming from the 4-pin connector. Solder these to the **output** of the DC step down converter. The converter has only on ground terminal to be used for both input and output, so you may have to solder one of the ground wires by just sticking it to the side of the other.
-
-![](images/ag/image50.png){ loading=lazy, width=45% }
-![](images/ag/image26.png){ loading=lazy, width=45% }
-
-Place this wiring harness into the frame as shown. Feed the 4-pin connector into the oval shaped hole. Push the barrel jack into the U shaped recess and tighten the nut.
-
-![](images/ag/image35.png){ loading=lazy, width=45% }
-![](images/ag/image9.png){ loading=lazy, width=45% }
-
-Plug the wide connector into the motor.
-Plug the small connector into the pins just next to the wide connector, with the orange wire on the pin at the edge of the board.
-
-![](images/ag/image45.png){ loading=lazy, width=45% }
-
-### Power Anchor
-
-If this is the power anchor, (the one with a slip ring installed) connect the input side of the slip ring to 24v power.
-Be sure to use a stripper suitable for such a small guage of wire
-
-![](images/ag/image49.png){ loading=lazy, width=45% }
-
 ## Raspberry Pi installation
 
 Use the [raspberry pi sd card imager tool](https://www.raspberrypi.com/software/) to create a card that is pre configured with your wifi password, ssh turned on, and a username you can login with. See [Raspberry Pi Setup](raspi_setup.md) for more detail. You can also do this later.  
@@ -197,10 +157,6 @@ Attach the camera with two M2x4 screws
 ![](images/ag/image5.png){ loading=lazy, width=45% }
 ![](images/ag/image20.png){ loading=lazy, width=45% }
 
-From the back, feed the 6 pin plug to the straight header and connect it with the V+ (red) wire closest to the SD card.
-
-![](images/ag/image7.png){ loading=lazy, width=45% } 
-
 Insert the steel lever arm of a microswitch into the slot of a printed line position sensing lever.
 Do this while the lever is depressed and hold firmly to avoid bending the metal while pressing it in till it bottoms out.
 Install the switch onto the frame in the position indicated in the image, it should curve upwards and the hole should be centered above the spool.
@@ -208,10 +164,59 @@ Install the switch onto the frame in the position indicated in the image, it sho
 ![](images/ag/image52.png){ loading=lazy, width=45% } 
 ![](images/ag/image53.png){ loading=lazy, width=45% } 
 
+## Power supply circuit
+
+Screw a nut onto the DC barrel Jack. (it should come pre-installed, but may fall off in shipping. It’s important this is done before the wiring.
+
+![](images/ag/image22.png){ loading=lazy, width=45% }
+
+Locate the long cable that came with the MKS\_SERVO42C. It has two different ends that are mirrors of each other. You can use either end to make a cable that matches this photo, VIN and GND will be red and black on one end, or yellow and green on the other end. Note the orientation of the white connector in the photo.
+Cut the power and ground wires to 7 cm, and all others to basically zero.
+Solder the black and red leads (or green and yellow) to the barrel jack. (it’s long leg is ground) The motor will receive 24v from this connector.  
+
+![](images/ag/image43.png){ loading=lazy, width=45% }
+
+Get one small DC step down converter from your kit (the green one).
+Cut two 2.5cm pieces of 28 guage wire or similar and solder them to GND and IN+.  
+Solder the step down regulator’s inputs to the 24v of the jack.
+
+![](images/ag/image27.png){ loading=lazy, width=45% }
+![](images/ag/image42.png){ loading=lazy, width=45% }
+![](images/ag/image44.png){ loading=lazy, width=45% }
+
+
+Find one of the pre-made anchor connectors. Find the two red and the black wires coming from the 6-pin connector. Solder these to the **output** of the DC step down converter. The converter has only on ground terminal to be used for both input and output, so you may have to solder one of the ground wires by just sticking it to the side of the other.
+You can find a diagram of this wire in the [wire guide](wire_guide.md).
+
+![](images/ag/image26.png){ loading=lazy, width=45% }
+
+Plug the white connector into the large port on the motor board. Push the barrel jack into the U shaped recess and tighten the nut.
+the smaller black connector is the UART communication line. plug this into the protruding pins on the motor board right between the large plug and the screw.
+Refer to the image, blue should be TX and orange should be RX on the motor board.
+
+![](images/ag/image50.png){ loading=lazy, width=45% }
+![](images/ag/image35.png){ loading=lazy, width=45% }
+
+Feed the black 6-pin connector through the holes in the back of the frame and plug it into the header on the raspberry pi, with V+ at the bottom (closest to the SD card end)
+
+![](images/ag/image9.png){ loading=lazy, width=45% }
+
 Feed the final two loose wires from the back to the front through the hole between the narrow rib and the raspberry pi.
 Cut them to an appropriate length, strip, and solder them to the right two contacts of the micrswitch. polarity is irrelevant.
 
-Assembly is complete\!  
+![](images/ag/image45.png){ loading=lazy, width=45% }
+![](images/ag/image54.png){ loading=lazy, width=45% }
+
+
+### Power Anchor
+
+If this is the power anchor, (the one with a slip ring installed) connect the input side of the slip ring to 24v power at the barrel jack.
+Be sure to use a stripper suitable for such a small guage of wire
+
+![](images/ag/image49.png){ loading=lazy, width=45% }
+
+Assembly is complete, other than the cover which is installed after the unit is on the wall.
+
 Plug in your unit to 24v power and confirm both the motor control screen and raspi green light are on.  
 (Do not run motor calibration, it has been done already and can only be done with a bare shaft)  
-Proceed with all the raspberry pi software setup now before continuing with the rest of the physical installation.
+Proceed with all the [raspberry pi software setup](raspi_setup.md) now before continuing with the rest of the physical installation.
