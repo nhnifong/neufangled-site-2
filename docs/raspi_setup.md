@@ -90,14 +90,14 @@ Install server
     chmod +x install.sh
     sudo ./install.sh
 
-Enable uart serial harware interface
+Open the interactive raspi config and go to "Interface Options" and "serial interface"
+Disable the login shell and enable the hardware uart (no, then yes)
 
-    sudo raspi-config nonint do_serial_hw 0
+    sudo raspi-config
 
-add the following lines lines to to `/boot/firmware/config.txt`  at the end this disables bluetooth, which would otherwise occupy the uart hardware.
+add the following line at the end of the boot config with `sudo nano /boot/firmware/config.txt`. This disables bluetooth, which would otherwise occupy the uart hardware.
 Then reboot after this change
 
-    enable_uart=1
     dtoverlay=disable-bt
 
 ### Gripper
