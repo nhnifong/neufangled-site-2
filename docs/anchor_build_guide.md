@@ -159,7 +159,8 @@ Attach the camera with two M2x4 screws
 
 Insert the steel lever arm of a microswitch into the slot of a printed line position sensing lever.
 Do this while the lever is depressed and hold firmly to avoid bending the metal while pressing it in till it bottoms out.
-Install the switch onto the frame in the position indicated in the image, it should curve upwards and the hole should be centered above the spool.
+Install the switch onto the frame in the position indicated in the image. It should curve upwards and the hole should be centered above the spool.
+Secure with two M2.5x10 screws.
 
 ![](images/ag/image52.png){ loading=lazy, width=45% } 
 ![](images/ag/image53.png){ loading=lazy, width=45% } 
