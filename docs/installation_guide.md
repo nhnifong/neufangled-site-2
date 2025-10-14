@@ -20,23 +20,26 @@ Partially install the wood screws into every open screw hole in every anchor unt
 
 ![](images/install/image5.png){ loading=lazy, width=45% }
 
-=== "Corner"
-    
-    Hold the anchor securely in the corner with about 2cm of clearance to the ceiling, or to the moulding. Don't push it right up against the moulding as you need space for the cover. Drive in every screw.
+Remove the anchor's white cover by pulling up on the large flat face to release the tabs, then pull it straight off the front. Another way if it feels stuck is, after getting the tabs loose, hold the cover and give the whole thing one large shake so the anchor falls in your lap and you're holding the empty cover.
 
+The cover should be prevented from falling because the line or wire is threaded through the face hole with a fishing swivel tied on the other side. Let it dangle a foot or so below the anchor as your mount it.
+
+=== "Corner"
+
+    Hold the anchor securely in the corner with about 2cm of clearance to the ceiling, or to the moulding. Don't push it right up against the moulding as you need space above the top for the cover. Drive in every screw.
+    
     ![](images/install/image6.png){ loading=lazy, width=45% }
     
 	!!! note "Note"
-	    The corners of walls in typical "stick framed" american houses will have at least one 2x4 in the corner on one side or the other. However, there are cases when two interior walls meet in a cross where the corner may be hollow. If you believe there is no stud in the corner somehow, you either need to install a backer board connected to the nearest studs, or select a flat anchor variant for that corner and pick a nearby stud.
+	    The corners of walls in typical "stick framed" american houses will have at least one 2x4 in the corner on one side or the other. However, there are cases when two interior walls meet in a cross where the corner may be hollow. If you believe there is no stud in the corner, you either need to install a backer board connected to the nearest studs, or select a flat anchor variant for that corner and pick a nearby stud.
         
 	    If you think you are in a building with steel or aluminum framing, please consult a professional. it is probably possible to bolt the anchor to the stud with the right hardware.
     
-	Thread the line through the hole at the bottom of the cover from the inside to the outside.
-
+    
 	![](images/install/image7.png){ loading=lazy, width=45% }
     
-	Snap on the cover. Secure it at the bottom with an M2.5x6 screw.
-
+	While holding the line tight so it can't get pinched in the body somewhere, Snap on the cover. Push it straight on hard so both tabs at the top click into place. Secure it at the bottom with an M2.5x6 screw.
+    
 	![](images/install/image8.png){ loading=lazy, width=45% }
 
 === "Flat"	
@@ -45,16 +48,12 @@ Partially install the wood screws into every open screw hole in every anchor unt
     Find a stud in the wall near the installation spot. I prefer to use neodymium magnets to locate the drywall scews.
     
     Hold the anchor securely onto the wall with the screw holes aligned to the stud and about 2cm of clearance to the ceiling, or to the moulding. Don't push it right up against the moulding as you need space for the cover. Drive in every screw.
-
-    ![](images/install/image1.png){ loading=lazy, width=45% }
     
-	Thread the line through the hole at the bottom of the cover from the inside to the outside.
-	Sorry about the yellow. I ran out of white.
-
+    ![](images/install/image1.png){ loading=lazy, width=45% }
 	![](images/install/image2.png){ loading=lazy, width=45% }
     
-	Snap on the cover. Secure it at the bottom with an M2.5x6 screw.
-
+	While holding the line tight so it can't get pinched in the body somewhere, Snap on the cover. Push it straight on hard so both tabs at the top click into place. Secure it at the bottom with an M2.5x6 screw.
+    
 	![](images/install/image3.png){ loading=lazy, width=45% }
 	![](images/install/image4.png){ loading=lazy, width=45% }
 
@@ -68,11 +67,23 @@ For the power anchor the cover will already have been threaded onto the wire. If
 
 ![](images/install/image10.png){ loading=lazy, width=45% }
 
+## Attach the gripper and gantry
+
+(when buying an assembled robot, the gantry should come pre-attached to the gripper)
+
+Your gripper needs a wire tail coming out of the hole in the center at the top with about 50cm of slack.
+
+!!! note "Note"
+
+    If you don't have enough slack, don't just yank out more wire. the winch servo has too much resistance and you could damage the wire. the only safe way to do it is to command the spool motor to move, but since the gripper is unpowered, you'd have to either use a servo tester to control only that servo, or power the gripper with aligator clips from a 9-24v supply. (a 9v battery may even be just enough for this)
+
+Thread all three components of this wire tail (GND, V++, and fishing line) up through the center hole in the gantry. pull up by the fishing line so that 20 cm of tail is above the hole.
+
+Tie a fishing swivel onto this fishing line with a palomar knot. this swivel should not be able to pass back through the hole.
+
 ## Tie up
 
-Lay the gripper, gantry, and power wire on the floor in the center of the room. with the gantry oriented so the power line goes straight out towards the anchor and isn't wrapped around anything.
-
-Gently pull out enough line from each anchor to reach the gantry. If you feel bumping while pulling out line, this is normal. It is an electrical phenomenon involving the stepper driver.
+Lay the gripper and gantry on the floor in the center of the room. Ensure all anchors are powred off. Pull all four lines slowly out of the anchors until their ends reach the gantry. If you feel bumping while pulling out line, this is normal. It is an electrical phenomenon involving the stepper driver, and it is harmless.
 
 ![](images/install/image11.png){ loading=lazy, width=45% }
 
@@ -81,7 +92,13 @@ Hook each eyelet to the corresponding hook on the gantry.
 ![](images/install/image12.png){ loading=lazy, width=45% }
 ![](images/install/image13.png){ loading=lazy, width=45% }
 
-Power on all the anchors using the "all on" button on your outlet remote. Open the [control panel](usage_guide.md), and select "Auto tension" from the main menu.
+Connect the conductors from the gripper to the conductors from the power wire. the conductors can either pass over the top of the gantry or through the hole with the fishing line, it does not matter as long as they are slack. the fishing lines should bear all the weight.
+
+Power on all the anchors using the "all on" button on your outlet remote. Open the [control panel](usage_guide.md). Wait for all components to be discovered, connected, and for video to come online. Select "Auto tension" from the main menu.
+
+Select the "Full Auto Calibration" option from the main menu.
+
+After calibration, you can move the robot around with a gamepad or the keyboard.
 
 ### Learn when to use the kill switch
 
