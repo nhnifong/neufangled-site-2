@@ -42,7 +42,7 @@ The impressive recent developments in robotics have stemmed from the use of deep
 
 ## Cost
 
-The following costs are estimates of what I will be charging for kits and complete robots. As of this writing, completed stringman robots are not for sale yet, however the design is open source and the BOM and STLs are available.
+The following costs are estimates of what I will be charging for kits and complete robots. As of this writing, completed stringman robots are not for sale yet, however the design is open source and the BOM and STLs are available on the [Downloads page](downloads.md).
 Cost has been strongly affected by tarrifs on Chinese imports to the United States recently, but thankfully raspberry pi's and their cameras are made in the UK.
 The MKS Servo42C is made in china however.
 
