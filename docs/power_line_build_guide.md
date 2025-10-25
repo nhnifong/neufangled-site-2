@@ -29,7 +29,7 @@ Print the components of the gantry in a white or light colored filament with two
 
 # Stickers
 
-You should have received four copies of the “gantry_front” aruco marker on sticker paper. Cut out the stickers with a ruler and an exacto knife along the thin dotted line, which leaves a 1cm border around the marker. If you need to print the stickers again, You can find the [document here](https://docs.google.com/document/d/1uWInzjaWLs-bZ3f5-mjPZeAdHX51PbgfzJ0FCqzDZFw/edit?usp=sharing) and the [paper on amazon](https://www.amazon.com/dp/B092444Z49)
+You should have received four copies of the “gantry_front” aruco marker on sticker paper. Cut out the stickers with a ruler and an exacto knife along the thin dotted line, which leaves a 1cm border around the marker. If you need to print the stickers again, You can find the [document here](https://docs.google.com/document/d/1B41dnssHsm1Db0LiHVgLatEv6H1jt0amIagw2v5_7dU/edit?usp=sharing) and the [paper on amazon](https://www.amazon.com/dp/B092444Z49)
 
 ![](images/gantry/image3.png){ loading=lazy, width=45% }
 ![](images/gantry/image4.png){ loading=lazy, width=45% }
