@@ -43,6 +43,7 @@ Secure it with an M4 nut in the cutout. Tighten and then back off just until the
 Confirm everything you assembled is oriented just as pictured.
 
 Locate the partially assembled pressure sense connector. It can be identified by the exposed resistor.
+You can find the description of how to make one in the [Wire guide](wire_guide.md)
 
 ![](images/grip/image3.png){ loading=lazy, width=45% }
 
