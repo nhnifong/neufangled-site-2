@@ -19,8 +19,14 @@ Compatible with the pilot release hardware kit
 
 CAD for this project was done in Onshape
 
-**[Cranebot in Onshape](https://cad.onshape.com/documents/35e8d1e03abf98b58e74f66a/w/41383f96f6398e5363837028/e/08e35efa81cd95d2cdc9e57b?configuration=List_uhAENovwJydxAX%3DDefault&renderMode=0&uiState=68064e9c593eab5166b4997f)**
+**[Stringman Pilot in Onshape](https://cad.onshape.com/documents/ea96e0d2d8469b02fac4d6e6/w/25bbd77eeea8846326810e62/e/14939e56a0c1dbe418025bc0?configuration=List_uhAENovwJydxAX%3DDefault&renderMode=0&uiState=690d018b8fe16c0273a90399)**
 
 ## BOM
 
-**[Bill Of Materials V4.5.4](https://docs.google.com/spreadsheets/d/1kLsbVjql81v7XJIGpkoWXCpJR9cWpTetd8mgG_NxFNU/edit?usp=sharing)**
+**[Bill Of Materials](https://docs.google.com/spreadsheets/d/1kLsbVjql81v7XJIGpkoWXCpJR9cWpTetd8mgG_NxFNU/edit?usp=sharing)**
+
+## License
+
+Stringman Pilot hardware designs (CAD document, STL files, Print Guide, and BOM) are released under the [CERN-OHL-W 2.0 license](https://ohwr.org/cern_ohl_w_v2.pdf) with the following addendum:
+
+ > The user assumes full responsibility for any injury, damage, or loss resulting from the installation or use of the hardware.
