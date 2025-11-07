@@ -50,6 +50,7 @@ From a terminal or powershell, connect to the pi, substituting the address.
 
 With only one turned on at a time you should be able to know which one you are logged into. Although when you turn on the anchor with the power line to the gripper, both come on at the same time. Those two can be disambiguated with
 
+    
     i2cdetect -y 1
 
 If it's the gripper, you'll see a few addresses, If it's an achor, nothing.
@@ -58,47 +59,33 @@ Draw a diagram of the room on a piece of paper labelling the address of each dev
 
 ### Configure and Install
 
-Once in, perform an update
+Once in, perform an update and install necessary dependencies
 
-    sudo apt update
-    sudo apt full-upgrade
-
-you may have to hit enter a few times during full-upgrade.
-
-When starting with the lite raspi image, you will be missing the following packages, so install those.
-
-    sudo apt install git python3-dev python3-virtualenv
+    sudo apt update -y && sudo apt full-upgrade -y -o Dpkg::Options::="--force-confold" && sudo apt install -y git python3-dev python3-virtualenv rpicam-apps
 
 Clone the [cranebot-firmware](https://github.com/nhnifong/cranebot3-firmware) repo
 
-    git clone https://github.com/nhnifong/cranebot3-firmware.git
-    cd cranebot3-firmware
+    git clone https://github.com/nhnifong/cranebot3-firmware.git && cd cranebot3-firmware    
 
 You do not need to follow the instructions in the readme of that repo, as those instructions are for development. Continue with these instructions.
-Follow either the anchor section or gripper section below
+Follow **either** the anchor section or gripper section below
 
 ### Anchors
 
-For any raspberry pi that will be part of an anchor, uncomment the `anchor` or `power anchor` line in the `server.conf` file depending on whether this anchor is the one having the power line to the gripper.
+For the power anchor, uncomment th `power anchor` line in the `server.conf` file and comment out the `anchor` line.
 
     nano server.conf
 
 `ctrl-s` to save and `ctrl-x` to exit.
-
-Install server
-
-    chmod +x install.sh
-    sudo ./install.sh
 
 Open the interactive raspi config and go to "Interface Options" and "serial interface"
 Disable the login shell and enable the hardware uart (no, then yes)
 
     sudo raspi-config
 
-add the following line at the end of the boot config with `sudo nano /boot/firmware/config.txt`. This disables bluetooth, which would otherwise occupy the uart hardware.
-Then reboot after this change
+Execute the following command to add a line at the end of `/boot/firmware/config.txt` that disables bluetooth, which would otherwise occupy the uart hardware.
 
-    dtoverlay=disable-bt
+    echo "dtoverlay=disable-bt" | sudo tee -a /boot/firmware/config.txt
 
 ### Gripper
 
@@ -110,15 +97,34 @@ Uncomment the `gripper` or line in the `server.conf`.
 
 `ctrl-s` to save and `ctrl-x` to exit.
 
+Enable i2c at a high baud rate
+
+    sudo raspi-config nonint do_i2c 0 && echo "dtparam=i2c_baudrate=400000" | sudo tee -a /boot/firmware/config.txt
+
+### Common instructions
+
 Install server
 
     chmod +x install.sh
     sudo ./install.sh
 
-Enable i2c
 
-    sudo raspi-config nonint do_i2c 0
+#### QA scripts
 
-Add this line to `/boot/firmware/config.txt` just under `dtparam=i2c_arm=on` and reboot
+Note that if you are proceeding to QA scripts you must reboot and then stop the service before running those scrips.
 
-    dtparam=i2c_baudrate=400000
+    sudo reboot now
+
+log back in
+
+    sudo systemctl stop cranebot.service
+
+### Updates
+
+At this time there are no packaged releases, only github
+
+    git switch pilot
+    git pull
+    source venv/bin/activate
+    pip install -r requirements_raspi.txt
+    sudo systemctl restart cranebot.service

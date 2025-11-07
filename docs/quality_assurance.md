@@ -1,5 +1,9 @@
 # Troubleshooting and Post-assembly Quality Checks 
 
+??? example "No robot components are discovered by the control panel"
+
+    Components were pre-configured with a wifi network and password. those credentials might be wrong. Check whether the devices are on the network by looking at your router's device list page for raspberry pi's. If they are present on the network, ensure your desktop is on the same network and the router permits local peer connections between machines. If that all looks good, mayebe the servers are not running. try running `sudo systemctl start cranebot.service` on each component. Logs can be seen with `tail -f cranebot.log` it's it's in a restarting loop, please file a bug on github.
+
 ??? example "MKS Servo 42C is making loud and constant noise and jittering while plugged in"
 
     **Solution:** It's in UART mode but a big file was dumped onto the serial port. the controller has buffered it and is interpreting it as commands. **Factory reset the motor** the blob of data could have altered any number of settings. After reset put it back in uart mode and se the baud back to 38400. 

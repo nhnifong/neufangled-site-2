@@ -272,11 +272,11 @@ Insert an M4x12 screw into the back plate in this hole, screwing it in just unti
 ![](images/grip/image5.png){ loading=lazy, width=45% }
 ![](images/grip/image65.png){ loading=lazy, width=45% }
 
-The drive gear servo must be installed in the fully open position. If you have a servo tester you can command the servo to move to it's lowest value. Otherwise, you can use the rasberry pi, but it's more involved.
+The drive gear servo must be installed in the fully open position. If you have a servo tester you can command the servo to move to it's lowest value (500ms). Otherwise, you can use the rasberry pi, but it's more involved.
 
 ??? example "Using the raspberry pi to manually move the servo"
 
-	Connect the unit to 24v power temporarily. The easiest way to do this is to solder a dc barrel jack on the two leads that come from the spool’s side hole.  
+	Connect the unit to 24v power temporarily. The easiest way to do this is a pair of aligator clips but you can also solder a dc barrel jack on the two leads that come from the spool’s side hole.  
 	Find out the raspberry pi’s ip address on your network.  
 	SSH into it with  
 
@@ -310,19 +310,66 @@ Tighten the M4 screw on the back. It aligns with the gear’s bore and holds it 
 Send a servo command of 90 to close the grip. Confirm it closes tightly with no gap at all. Reopen the grip by sending \-90. If there was any gap, adjust the fingers closed by one gear tooth, and repeat.  
 Secure the motor in place with four M3x10 screws.
 
-Close your terminal and power down by pulling the plug
-
 ![](images/grip/image48.png){ loading=lazy, width=45% }
 ![](images/grip/image18.png){ loading=lazy, width=45% }
 ![](images/grip/image47.png){ loading=lazy, width=45% }
 
-The connection to the final power line from the wall is covered in the [Powerline/Gantry Build Guide](power_line_build_guide.md). You can leave it hanging with a DC barrel jack on it for now.
+### Gripper Spool Connection
+
+Verify that the spool in your gripper has the hole facing the window. If not spin it now either with a servo tester, or by pushing on the gear teeth with your tweezers.
+
+Create a 2 meter peice of FEP tether power line and thread one end (all three strands) through the hole at the top of the gripper so it goes behind the spool and up and out the window as pictured. use your tweezers to grab it.
+
+![](images/gantry/image13-g.png){ loading=lazy, width=45% }
+![](images/gantry/image14-g.png){ loading=lazy, width=45% }
+![](images/gantry/image1-g.png){ loading=lazy, width=45% }
+
+Grab only the fishing line and insert the end into the small hole in the spool, such that it comes back out of the adjacent larger hole. Tie off the fishing line with a triple square knot. it is extremely tricky and the only way to do it is with the cross locking tweezers and maybe another normal pair of tweezers or needle nose pliers. 
+
+
+![](images/gantry/image31-g.png){ loading=lazy, width=45% }
+![](images/gantry/image32-g.png){ loading=lazy, width=45% }
+![](images/gantry/image33-g.png){ loading=lazy, width=45% }
+
+Cut the wires from the power-line and the wires from the slip ring to the shortest length that you can while still having space to comfortably splice them with helping hands.
+
+
+!!! note "Design cosideration"
+
+    Since the fishing line is now shorter than the wires, it will bear the weight even if all the line is unwound, protecting the wire splices from stress. but if the loop of wire is too long, it may not stay buried under the windings, and this can cause it to get stuck in the gear so it needs to be short. If you can't make it short at least tape it down.
+
+Prepare one narrow heat shrink tube cut in two. Put them onto the wires before beginning the splice.
+
+Splice the grey-red and black-black. activate the heat shrink but keep your heat away from the braided fishing line. 
+
+![](images/gantry/image15-g.png){ loading=lazy, width=45% }
+
+Pull the line tight out of the top of the gripper. plug in the winch servo to a servo tester and use it to carefully wind your two meters of power line onto the spool.
+
+![](images/gantry/image18-g.png){ loading=lazy, width=45% }
 
 Print the outer shells in the color of your choice and trim any support material.
 The outer shells press onto each side. each shell half is secured with two M3x4 screws at the top, and one at the bottom.
-They will be removed temporarily during the final installation of the power supply line.
 
 ![](images/grip/image21.png){ loading=lazy, width=45% }
 ![](images/grip/image75.png){ loading=lazy, width=45% }
-![](images/grip/image76.png){ loading=lazy, width=45% }
 ![](images/grip/image77.png){ loading=lazy, width=45% }
+
+Tie a fishing swivel onto the end of the fishing line with a [palomar knot](https://www.animatedknots.com/palomar-knot).
+
+![](images/grip/image78.png){ loading=lazy, width=45% }
+
+Put two peices of heat shink on the leads of a male JST 1.25 2P connector.
+
+![](images/grip/image79.png){ loading=lazy, width=45% }
+
+Splice the grey/red wires and black/black wires. Activiate the heat shrink. keep heat away from the fishing line.
+
+![](images/grip/image80.png){ loading=lazy, width=45% }
+![](images/grip/image81.png){ loading=lazy, width=45% }
+
+Complete! you are now in possession of one complete gripper - the most complex part of Stringman.
+
+Proceed to the [Raspberry Pi Setup](raspi_setup.md) instructions and after that's done, there is a script in qa/gripper_eval.py that can help you confirm the gripper has been assembled correctly and you have good continuity on all conenctors. There's also a manual QA checklist in [Quality Assurance](quality_assurance.md)
+
+![](images/grip/image82.png){ loading=lazy, width=45% }

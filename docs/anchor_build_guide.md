@@ -208,16 +208,76 @@ Cut them to an appropriate length, strip, and solder them to the right two conta
 ![](images/ag/image45.png){ loading=lazy, width=45% }
 ![](images/ag/image54.png){ loading=lazy, width=45% }
 
-
-### Power Anchor
+### Power Anchor Steps
 
 If this is the power anchor, (the one with a slip ring installed) connect the input side of the slip ring to 24v power at the barrel jack.
 Be sure to use a stripper suitable for such a small guage of wire
 
 ![](images/ag/image49.png){ loading=lazy, width=45% }
 
-Assembly is complete, other than the cover which is installed after the unit is on the wall.
+### Winding the Spool
 
-Plug in your unit to 24v power and confirm both the motor control screen and raspi green light are on.  
-(Do not run motor calibration, it has been done already and can only be done with a bare shaft)  
-Proceed with all the [raspberry pi software setup](raspi_setup.md) now before continuing with the rest of the physical installation.
+Thread either fishing line alone or the end of a 7 meter segment of power line (for power anchors only) into the small hole on the spool such that it comes back out of the adjacent larger hole and tie it off. 
+
+![](images/ag/image20-a.png){ loading=lazy, width=45% }
+![](images/ag/image21-a.png){ loading=lazy, width=45% }
+
+Trim back the black and white wires of the powerline so that they end where the wires of the slip ring end, with just a little slack. 
+The Fishing line must take any tension in the event that the spool becomes completely unwound, so it must be tied off to the spool with a shorter length than the power lines. 
+
+![](images/ag/image22-a.png){ loading=lazy, width=45% }
+
+Prepare one narrow heat shrink tube cut in two, and one whole larger heatshrink tube. Put them onto the wires before beginning the splice.
+
+![](images/ag/image15-a.png){ loading=lazy, width=45% }
+
+Splice both conductors. black to black, and red to whatever the other one is.
+
+![](images/ag/image23-a.png){ loading=lazy, width=45% }
+
+Shrink the small tubes for each conductor first, then the large heat shink tube around them both.
+
+!!! tip "Warning"
+
+    Keep flame or heat well away from the fishing line. If you damage it with flame, even if it appears intact, cut the splice out and start over.
+
+After completing the splice, manually wind a few turns of the powerline onto the spool in the pictured direction. 
+
+![](images/ag/image24-a.png){ loading=lazy, width=45% }
+
+
+There is a script in `qa/anchor_eval.py` that automatically winds the correct length of fishing line or power line onto the spool. In order to run it you will have to Proceed with all the [raspberry pi software setup](raspi_setup.md) now before continuing.
+
+After installing the software, temporarily de-activate the server and run the eval script.
+Follow the instruction to click the microswitch and winding will begin.
+
+from inside cranebot3-firmware
+
+    sudo systemctl stop cranebot.service
+    source venv/bin/activate
+    python qa/anchor_eval.py
+
+!!! tip
+
+    If any problems are encountered by that script, check though [Quality Assurance](quality_assurance.md) steps but in my experience it's almost always a problem with the continuity of the hand crimped connectors
+
+Once the correct length of fishing line or power line is wound, trim it if necessary and thread the end through the microswitch lever. 
+
+![](images/ag/image55.png){ loading=lazy, width=45% }
+
+!!! danger
+
+    If you are trimming power line from a spool, unplug power first so your scissors don't short the two conductors.
+
+Thread it through the hole on an appropriately shaped cover peice.
+Click the cover piece in place, making sure the line does not become pinched anywhere. Gently pull out about 30cm of line from the hole, confirming that the microswitch clicks when transitioning from tight to loose and back again.
+
+![](images/ag/image56.png){ loading=lazy, width=45% }
+
+Tie a fishing swivel onto the end of the fishing line with a [palomar knot](https://www.animatedknots.com/palomar-knot).
+
+![](images/ag/image57.png){ loading=lazy, width=45% }
+
+#### For power anchors
+
+Splice a female JST 1.25 2P connector onto the wires with solder and heat shrink. 
