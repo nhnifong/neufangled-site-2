@@ -128,3 +128,12 @@ At this time there are no packaged releases, only github
     source venv/bin/activate
     pip install -r requirements_raspi.txt
     sudo systemctl restart cranebot.service
+
+### Setting a different wifi network
+
+Insert the Micro SD card from a robot component in your PC. Confirm it is mounted at /media/$USER/rootfs
+run the following command from the cranebot3-firmware repo
+
+    sudo ./add_wifi_config.sh "SSID" "password"
+
+repeat this for the SD card from every component.
