@@ -1,20 +1,12 @@
-# Powerline/Gantry Build Guide
+# Gantry Build Guide
 
 Hardware Version: Pilot run
 
-Coveres the connetion of the power line between the power anchor and gripper, gantry assembly, and tie up of the fishing lines.
-This is meant to be done **before** [final installation](installation_guide.md).
+## Tool list
 
-Tools needed:  
-
- - Scissors
- - [Cross locking tweezers](https://www.amazon.com/dp/B001BU9MLG)
-
-
-!!! tip "Warning"
-
-    PLA will soften and is flammable. Direct any heat source used to shrink tubing away from it.
-
+ - [Mini screwdriver with a bit set](https://www.amazon.com/dp/B01KB02F9C)  
+ - [Cross locking tweezers](https://www.amazon.com/dp/B001BU9MLG)  
+ 
 ## Gantry
 
 The gantry refers to a passive component that hangs where all the anchor lines meet and displaying markers for camera pose estimation.
