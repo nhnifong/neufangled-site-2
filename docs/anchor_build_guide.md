@@ -227,11 +227,8 @@ The Fishing line must take any tension in the event that the spool becomes compl
 
 ![](images/ag/image22-a.png){ loading=lazy, width=45% }
 
-Prepare one narrow heat shrink tube cut in two, and one whole larger heatshrink tube. Put them onto the wires before beginning the splice.
-
-![](images/ag/image15-a.png){ loading=lazy, width=45% }
-
-Splice both conductors. black to black, and red to whatever the other one is.
+Prepare two appropriately sized heat shrink tubes. Put them onto the wires before beginning the splice.
+Splice both conductors. black to black, and red to gray.
 
 ![](images/ag/image23-a.png){ loading=lazy, width=45% }
 
@@ -282,6 +279,6 @@ Tie a fishing swivel onto the end of the fishing line with a [palomar knot](http
 
 Splice a female JST 1.25 2P connector onto the wires with solder and heat shrink. 
 
-![](images/ag/image58.png){ loading=lazy, width=45% }
+![](images/ag/image58.jpg){ loading=lazy, width=45% }
 
-The anchor is complete! during [installation](insallation_guide) you will temporarily remove the cover, screw it to the wall, then snap the cover back on and secure it with a single M2.5x10 screw in the bottom. You can put that screw in now as a way to not lose it.
+The anchor is complete! during [installation](insallation_guide.md) you will temporarily remove the cover, screw it to the wall, then snap the cover back on and secure it with a single M2.5x10 screw in the bottom. You can put that screw in now as a way to not lose it.
