@@ -97,9 +97,10 @@ Uncomment the `gripper` or line in the `server.conf`.
 
 `ctrl-s` to save and `ctrl-x` to exit.
 
-Enable i2c at a high baud rate
+Disable the hardware i2c while replacing it with a software I2C at a 100khz. This is for compatibility with the BNO085.
 
-    sudo raspi-config nonint do_i2c 0 && echo "dtparam=i2c_baudrate=400000" | sudo tee -a /boot/firmware/config.txt
+    sudo raspi-config nonint do_i2c 1 && echo "dtoverlay=i2c-gpio,bus=1,i2c_gpio_sda=2,i2c_gpio_scl=3,i2c_gpio_delay_us=2" | sudo tee -a /boot/firmware/config.txt
+
 
 ### Common instructions
 
