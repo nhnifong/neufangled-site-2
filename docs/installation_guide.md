@@ -90,26 +90,47 @@ Plug in the anchor via one of the provided outlet remotes. The outlet remote ser
 
 You can now move the ladder to the next corner.
 
-## Pre Tie-up connection test
+### Supply temporary power to the gripper
 
-Once the gripper is attached, you'll need to be able to move it out of your way, so before doing that. Ensure the controller can run on your host machine and connect to the robot components.
+Unpack the gripper and gantry, which are attached, and place them somewhere near the anchor with the power line. pull the line out enough to reach and temporarily plug in the gripper for the connection test step.
 
-!!! note "No other stringman robots may be up on the network during this step"
-    In order for the controller to discover which components belong to this robot, If you own another stringman, turn it off.
+![](images/install/image21.png){ loading=lazy, width=45% }
 
-Following the instructions in the [Desktop Setup Guide](desktop_setup_guide.md) start up the Stringman controller and wait for all robot components to be discovered and connected. Confirm you see the video feeds and every anchor says "Connected" above it. If you didn't connect power to the gripper, that's fine it will be discovered after tie up.
+## Pre Tie-up Connection Test
+
+Ensure the control panel can run on your host machine and connect to the robot components.
+
+Following the instructions in the [Desktop Setup Guide](desktop_setup_guide.md) start up the Stringman controller. It begins searching for components on the network.
+
+!!! note "Only one complete stringman robot may be on the network during this step"
+    In order for the controller to discover which components belong to this particula robot, If you own another stringman, turn it off.
+
+Without having tied any of the lines to the gantry, power on all components using the outlet remote. Within about 30 seconds of booting, stringman components begin looking for a wifi share QR code using their cameras.
+
+### Give all five components wifi credentials
+
+Go to [qifi.org](https://qifi.org) on your phone and enter your wifi SSID and password. It will not be saved or sent anywhere. Press Generate to create a QR code that contains this information. You can also try your phone's share wifi feature, but due to the fancy decorative QR codes produced by android, it usually doesn't work. whereas, qifi.org generates traditional blocky QR codes.
+
+Hold the QR in view of each camera for about 10 seconds each. They can see a 2-inch code from about 5 feet away.
+
+At this time there is neither auditory or visual feedback to indicate success, only the control panel.
+
+Wait about 2 more minutes for connections to be made and components to be discovered. (In my testing the device appears on the network at the 60s mark if the code is shown throughout boot)
+
+Confirm that the control panel has discovered all 5 components (four anchors and one gripper). If it has not, power everythinng off and trying repeating the process.
+
+If this method is not working for you, wifi credentials can also be added to the SD cards with the [add_wifi_config.sh](https://github.com/nhnifong/cranebot3-firmware/blob/main/add_wifi_config.sh) script.
 
 ![](images/install/image23.png){ loading=lazy, width=45% }
-
-Close the Stringman controller.
 
 If you have connection issues at this step, your anchors and host machine might not be on the same network. Please refer to the [Troubleshooting Page](quality_assurance.md) or contact me on Discord to resolve the issue before tie up.
 
 ## Tie up
 
-Unpack the gripper and gantry, which are attached, and lay them on the floor in the center of the room. Ensure all anchors are powred off. Pull all four lines slowly out of the anchors until their ends reach the gantry. 
+Close the Stringman controller and power off all components for this step.
 
-![](images/install/image21.png){ loading=lazy, width=45% }
+Place the gripper and gantry on the floor in the center of the room. Pull all four lines slowly out of the anchors until their ends reach the gantry. 
+
 ![](images/install/image11.png){ loading=lazy, width=45% }
 
 Thread each eyelet into the closest hole in the side of the gantry and clip it onto one of the speed clips. Do not cross lines, and select the right speed clip for each line so that they form a clean cross in the center.
