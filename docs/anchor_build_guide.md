@@ -189,7 +189,10 @@ Solder the step down regulator’s inputs to the 24v of the jack.
 Find one of the pre-made anchor connectors. Find the two red and the black wires coming from the 6-pin connector. Solder these to the **output** of the DC step down converter. The converter has only on ground terminal to be used for both input and output, so you may have to solder one of the ground wires by just sticking it to the side of the other.
 You can find a diagram of this wire in the [wire guide](wire_guide.md).
 
+![](images/ag/image59.png){ loading=lazy, width=45% }
+![](images/ag/image60.png){ loading=lazy, width=45% }
 ![](images/ag/image26.png){ loading=lazy, width=45% }
+
 
 Plug the white connector into the large port on the motor board. Push the barrel jack into the U shaped recess and tighten the nut.
 the smaller black connector is the UART communication line. plug this into the protruding pins on the motor board right between the large plug and the screw.
