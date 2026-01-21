@@ -1,7 +1,13 @@
 # Raspberry Pi Setup
 
 To be performed for each robot component (four anchors and one gripper)
-If you purchased a fully assembled robot and provided the wifi credentials, you do not need to do this.
+If you purchased a fully assembled robot you do not need to do this.
+
+## For pre-imaged cards
+
+When the component boots it will look for wifi credentials using it's camera. Hold up a wifi share QR code to it and it should appear on your network and be detected by the control panel in under a minute.
+
+You can generate a valid wifi share code with [qifi.org](http://qifi.org)
 
 ## Image SD card
 
@@ -48,20 +54,13 @@ From a terminal or powershell, connect to the pi, substituting the address.
 
     ssh pi@192.168.1.111
 
-With only one turned on at a time you should be able to know which one you are logged into. Although when you turn on the anchor with the power line to the gripper, both come on at the same time. Those two can be disambiguated with
-
-    
-    i2cdetect -y 1
-
-If it's the gripper, you'll see a few addresses, If it's an achor, nothing.
-
 Draw a diagram of the room on a piece of paper labelling the address of each device, with which one is the power anchor.
 
 ### Configure and Install
 
 Once in, perform an update and install necessary dependencies
 
-    sudo apt update -y && sudo apt full-upgrade -y -o Dpkg::Options::="--force-confold" && sudo apt install -y git python3-dev python3-virtualenv rpicam-apps
+    sudo apt update -y && sudo apt full-upgrade -y -o Dpkg::Options::="--force-confold" && sudo apt install -y git python3-dev python3-virtualenv rpicam-apps i2c-tools
 
 Clone the [cranebot-firmware](https://github.com/nhnifong/cranebot3-firmware) repo
 
@@ -69,6 +68,12 @@ Clone the [cranebot-firmware](https://github.com/nhnifong/cranebot3-firmware) re
 
 You do not need to follow the instructions in the readme of that repo, as those instructions are for development. Continue with these instructions.
 Follow **either** the anchor section or gripper section below
+
+With only one turned on at a time you should be able to know which one you are logged into. Although when you turn on the anchor with the power line to the gripper, both come on at the same time. Those two can be disambiguated with
+
+    i2cdetect -y 1
+
+If it's the gripper, you'll see a few addresses, If it's an achor, nothing.
 
 ### Anchors
 
