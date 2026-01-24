@@ -13,121 +13,27 @@ You can generate a valid wifi share code with [qifi.org](http://qifi.org)
 
 Download the [Raspiberry Pi Imager](https://www.raspberrypi.com/software/)
 
-Insert a MicroSD card and open the imager  
+Insert a MicroSD card and open the imager.  
 
 For device, select `Raspberry Pi Zero 2 W`  
+![](images/raspi/image1.png){ loading=lazy, width=45% }
+
+Download the [Stringman Raspberry Pi Image](https://storage.googleapis.com/stringman-models/stringman-zero2w.img) (1.6 GB)
+For operating system, select custom image and use the downloaded file.
 ![](images/raspi/image2.png){ loading=lazy, width=45% }
-
-
-For operating system, select `RASPBERRY PI OS LITE (64-BIT)`.  
-it can be found in the `Raspberry Pi OS (other)` section.
-
-![](images/raspi/image6.png){ loading=lazy, width=45% }
-![](images/raspi/image5.png){ loading=lazy, width=45% }
-
-Select the SD card you inserted as the media to be flashed.  
-Click `Next`  
-Click `Edit Settings`  
-
 ![](images/raspi/image3.png){ loading=lazy, width=45% }
 
-Set the user and password. `pi` and `pi` are normally fine defaults.
-Confirm the wifi credentials are correct.
+Click `Next` and then select the SD card you would like to flash.
 
 ![](images/raspi/image4.png){ loading=lazy, width=45% }
 
-On the Services tab, enable SSH
+Click `Write` and confirm. When the image is finished, insert it into the raspberry pi of the stringman component and boot.
 
-![](images/raspi/image7.png){ loading=lazy, width=45% }
-
-Click `Save` and then `Yes`
-
-## Log Into the Pi
-
-### Match IP addresses to devices
-
-After installation, power on each component one at a time. It is an oversight on my part, but there isn't an LED on them to help you figure out which IP address corresponds to each component.  
-
-When powered on, they should show up on your network. In order to discover their IP addresses, you may have to look at the configuration page of your router. On an ATT router/gateway for example, that would be http://192.168.1.254/ and it's in a section at the bottom labeled home network devices.
-
-From a terminal or powershell, connect to the pi, substituting the address.
-
-    ssh pi@192.168.1.111
-
-Draw a diagram of the room on a piece of paper labelling the address of each device, with which one is the power anchor.
-
-### Configure and Install
-
-Once in, perform an update and install necessary dependencies
-
-    sudo apt update -y && sudo apt full-upgrade -y -o Dpkg::Options::="--force-confold" && sudo apt install -y git python3-dev python3-virtualenv rpicam-apps i2c-tools
-
-Clone the [cranebot-firmware](https://github.com/nhnifong/cranebot3-firmware) repo
-
-    git clone https://github.com/nhnifong/cranebot3-firmware.git && cd cranebot3-firmware    
-
-You do not need to follow the instructions in the readme of that repo, as those instructions are for development. Continue with these instructions.
-Follow **either** the anchor section or gripper section below
-
-With only one turned on at a time you should be able to know which one you are logged into. Although when you turn on the anchor with the power line to the gripper, both come on at the same time. Those two can be disambiguated with
-
-    i2cdetect -y 1
-
-If it's the gripper, you'll see a few addresses, If it's an achor, nothing.
-
-### Anchors
-
-For the power anchor, uncomment th `power anchor` line in the `server.conf` file and comment out the `anchor` line.
-
-    nano server.conf
-
-`ctrl-s` to save and `ctrl-x` to exit.
-
-Open the interactive raspi config and go to "Interface Options" and "serial interface"
-Disable the login shell and enable the hardware uart (no, then yes)
-
-    sudo raspi-config
-
-Execute the following command to add a line at the end of `/boot/firmware/config.txt` that disables bluetooth, which would otherwise occupy the uart hardware.
-
-    echo "dtoverlay=disable-bt" | sudo tee -a /boot/firmware/config.txt
-
-### Gripper
-
-Setup for the raspberry pi in the gripper with the Inventor Hat Mini.  
-
-Uncomment the `gripper` or line in the `server.conf`.
-
-    nano server.conf
-
-`ctrl-s` to save and `ctrl-x` to exit.
-
-Disable the hardware i2c while replacing it with a software I2C at a 100khz. This is for compatibility with the BNO085.
-
-    sudo raspi-config nonint do_i2c 1 && echo "dtoverlay=i2c-gpio,bus=1,i2c_gpio_sda=2,i2c_gpio_scl=3,i2c_gpio_delay_us=2" | sudo tee -a /boot/firmware/config.txt
-
-
-### Common instructions
-
-Install server
-
-    chmod +x install.sh
-    sudo ./install.sh
-
-
-#### QA scripts
-
-Note that if you are proceeding to QA scripts you must reboot and then stop the service before running those scrips.
-
-    sudo reboot now
-
-log back in
-
-    sudo systemctl stop cranebot.service
+Configure the wifi with a share code according to the structions in the section above.
 
 ### Updates
 
-At this time there are no packaged releases, only github
+At this time it is only possible to update by logging into each component
 
     git switch pilot
     git pull
