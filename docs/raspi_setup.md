@@ -31,21 +31,32 @@ Click `Write` and confirm. When the image is finished, insert it into the raspbe
 
 Configure the wifi with a share code according to the structions in the section above.
 
+### Eval tools and component types
+
+The stringman image automatically distinguishes between all component types except the pilot anchor and pilot power anchor. They differ only by the winding constant. If you are assembling components, after assembly you will have to run the corrsponding eval tool, and the argument you pass here sets the type.
+
+Anchors: `qa-anchor anchor|power_anchor`
+Grippers: `qa-gripper` 
+
+These tools walk you through each sensor and stop if one isn't responding. At the end, they wind the correct amount of line on the spool so be prepared for that.
+
 ### Updates
 
-At this time it is only possible to update by logging into each component
+At this time it is only possible to update by logging into each component. In the configuration.json file where your robot's details are saved,
+`stringman-headless` will have written all of their id addresses. ssh into each one.
 
-    git switch pilot
-    git pull
-    source venv/bin/activate
-    pip install -r requirements_raspi.txt
-    sudo systemctl restart cranebot.service
+    ssh pi@<component-address>
+
+the password on the default stringman image is `Fo0bar!!`
+
+    /opt/robot/env/bin/pip install --upgrade "nf_robot[pi]"
 
 ### Setting a different wifi network
 
-Insert the Micro SD card from a robot component in your PC. Confirm it is mounted at /media/$USER/rootfs
+At boot if none of the saved wifi networks can be connected to, the device will go into QR code checking mode with it's camera.
+Just hold up a new code.
+
+If that doesn't work in your scenario, insert the Micro SD card from a robot component in your PC. Confirm it is mounted at /media/$USER/rootfs
 run the following command from the cranebot3-firmware repo
 
     sudo ./add_wifi_config.sh "SSID" "password"
-
-repeat this for the SD card from every component.
