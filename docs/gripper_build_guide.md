@@ -9,24 +9,14 @@ First you should have printed the parts according to the [print guide](print_gui
 
 ## Tool list
 
- - Assorted allen wrenches  
- - [Mini screwdriver with a bit set](https://www.amazon.com/dp/B01KB02F9C)  
- - [Wire stripper that goes down to 30awg](https://www.amazon.com/dp/B07D25N45F)  
- - Soldering station with helping hands and a magnifier.  
- - Multimeter, preferably with spring loaded hook probes  
- - [Cross locking tweezers](https://www.amazon.com/dp/B001BU9MLG)  
- - [Mini side cutters](https://www.amazon.com/dp/B00FZPDG1K)  
- - Super glue ([loctite super glue “professional liquid”](https://www.amazon.com/dp/B07VL6MP94?ref_=ppx_hzsearch_conn_dt_b_fed_asin_title_1&th=1) recommended)  
- - Small pocket knife or exacto  
- - [Digital calipers](https://www.amazon.com/dp/B001AQEZ2W), for measuring things and identifying screws. Or just use a ruler 
+ - [Mini screwdriver with a bit set](https://www.amazon.com/dp/B01KB02F9C)
+ - Soldering iron with helping hands and a magnifier
+ - [Cross locking tweezers](https://www.amazon.com/dp/B001BU9MLG)
+ - Super glue ([loctite super glue “professional liquid”](https://www.amazon.com/dp/B07VL6MP94?ref_=ppx_hzsearch_conn_dt_b_fed_asin_title_1&th=1) recommended)
 
 ## Fingers
 
 Attach a fork to the back of a finger pad. Forks and finger pads are both symmetrical. There is no left and right finger. Insert an M3x30 bolt with M3 washers in the following four locations: after the bolt head, one on each side of the fork, and one at the end of the bolt, followed by an m3 nylock nut. Tighten the nylock nut until no slack remains, then back off until the rod can swing with no out of plane motion. Repeat for the other finger.
-
-![](images/grip/image9.png){ loading=lazy, width=45% }
-![](images/grip/image49.png){ loading=lazy, width=45% }
-![](images/grip/image53.png){ loading=lazy, width=45% }
 
 Slide in a geared lever into the finger assembly with it's flat face coplanar with the finger's flat flace.
 Insert an M4x25 bolt through the assembly and a M4 lock nut on the other side.
@@ -35,31 +25,16 @@ If you are able to, try to get two M4 washers into the gaps as the bolt comes th
 
 Tighten and then back off just until the mechanism moves freely. Repeat with the other finger.
 
-![](images/grip/image7.png){ loading=lazy, width=45% }
-![](images/grip/image46.png){ loading=lazy, width=45% }  
-![](images/grip/image50.png){ loading=lazy, width=45% }
-![](images/grip/image34.png){ loading=lazy, width=45% }
-
 Locate the pressure sense connector. It is a two pin 2.54 pitch female molex plug with about 20cm of wire ends.
 
-![](images/grip/image3.png){ loading=lazy, width=45% }
-
 Select the finger with the wire channel. Feed the wires through the small hole starting at the gear and leading down towards the finger joint. Push them down the channel, till they pop out of the face near the joint, thenput them all they way through.
-
-![](images/grip/image64.png){ loading=lazy, width=45% }
 
 Place a very small piece of heat shrink on each wire.
 Strip the ends of the wires, solder the pressure sense resistor to the wires in such a way that they are not twisted. there is no polarity, but there is not enough room for a twist.
 Remove the adhesive backing and stick the sensor in the center of the finger pad, feeding any excess wire back through the channel.
 
-![](images/grip/image72.png){ loading=lazy, width=45% }
-![](images/grip/image70.png){ loading=lazy, width=45% }
-
 Cover the face of the finger in adhesive backed foam and trim it to size.
 When trimming the foam, you don’t have to be very precise, and it doesn't have to go exactly to the edge.
-
-![](images/grip/image8.png){ loading=lazy, width=45% }
-![](images/grip/image32.png){ loading=lazy, width=45% }
 
 ## Motors
 
@@ -71,9 +46,6 @@ Snap two m3x6 screws into the finger drive gear from the sides. For this you can
 
 After printing, tear the ears off the mechanism lid print. Clean up the area the bridge was supporting with a sharp tool.
 
-![](images/grip/image41.png){ loading=lazy, width=45% }
-
-
 Attach the finger motor to the inside of mechanism_lid with four of the smallest screws included with the motors.
 
 Insert two M4x25 bolts into the back plate from the bottom, hold them in as you place it on the table. Followed by two M4 washers.
@@ -84,52 +56,19 @@ Feed the plug of the pressure sense wire through the smile shaped slot in back_p
 
 Place M4 washers over the bolts after they protrude from the fingers.
 
-![](images/grip/image1.png){ loading=lazy, width=45% }
-![](images/grip/image73.png){ loading=lazy, width=45% }
-
-![](images/grip/image52.png){ loading=lazy, width=45% }
-![](images/grip/image45.png){ loading=lazy, width=45% }
-
-![](images/grip/image63.png){ loading=lazy, width=45% }
-![](images/grip/image17.png){ loading=lazy, width=45% }
-
-![](images/grip/image62.png){ loading=lazy, width=45% }
-![](images/grip/image67.png){ loading=lazy, width=45% }
-
-![](images/grip/image71.png){ loading=lazy, width=45% }
-![](images/grip/image44.png){ loading=lazy, width=45% }
-
-![](images/grip/image16.png){ loading=lazy, width=45% }
-![](images/grip/image30.png){ loading=lazy, width=45% }
-
-![](images/grip/image20.png){ loading=lazy, width=45% }
-![](images/grip/image4.png){ loading=lazy, width=45% }
-
 Place the mechanism lid and finger motor assembly onto the back plate, gently wiggle everything in order to get it to fit. The two M4x25 bolts should go through the holes in mechanism_lid and the drive gear should mesh with the finger gears. The alignment tabs on the sides should line up.
 
 Insert two M4 nuts into the hexagonal holes. Tighten the bolts from behind and then back off enough that the geared levers move freely. 
 Secure the lid around the edges with four M3x10 bolts
-
-![](images/grip/image58.png){ loading=lazy, width=45% }
-![](images/grip/image59.png){ loading=lazy, width=45% }
-
-![](images/grip/image68.png){ loading=lazy, width=45% }
-![](images/grip/image33.png){ loading=lazy, width=45% }
-
-![](images/grip/image36.png){ loading=lazy, width=45% }
-![](images/grip/image10.png){ loading=lazy, width=45% }
-
-![](images/grip/image22.png){ loading=lazy, width=45% }
 
 ## Electronics
 
 Unpack one Camera Module and install the 8cm mini cable. (golden one) the wide end of the mini ribbon cable plugs in the camera, with its black face on the camera’s back side. The plastic retaining clip is pulled out to loosen a ribbon cable, and pushed in to secure one.  
 screw the camera to the camera mount with two M2x4 bolts in opposite corners. Make sure the ribbon is in the pictured direction.
 
-![](images/grip/image13.png){ loading=lazy, width=45% }
-![](images/grip/image2.png){ loading=lazy, width=45% }
-
 Stick a heat sink onto a Raspberry Pi Zero 2W (with header). It goes on the black chip.
+
+![](images/grip/image11.png){ loading=lazy, width=45% }
 
 Press the Strinman Gripper Hat onto the raspberry pi.
 
@@ -145,16 +84,9 @@ Attach the camera mount assembly to the back plate with an M3x6 countersunk scre
 
 Image an SD card according to the instructions in [Raspi Setup](raspi_setup.md) and insert it into the SD card slot.
 
-![](images/grip/image35.png){ loading=lazy, width=45% }
-
 Fold the two fork shaped linkages into place so their remaining holes align with the holes in the gripper body.  
 Attach these with four M3x14 screws.
 After connecting them all, test the movement of the gripper. If they do not move freely enough, loosen the screws a little.
-
-![](images/grip/image60.png){ loading=lazy, width=45% }
-![](images/grip/image66.png){ loading=lazy, width=45% }
-![](images/grip/image39.png){ loading=lazy, width=45% }
-![](images/grip/image69.png){ loading=lazy, width=45% }
 
 Attach the rangefinder to the frame with two M2x4 screws.  
 Attach the IMU to the frame with two M3x4 screws.  
@@ -162,24 +94,11 @@ Plug in the 4-pin dupont connector that has doubles coming out of it into the IM
 Plug the 4-pin dupond connector with singles into the rangefinder. VCC on the end.  
 Feed the white connector through the hole to the other side and connect it to the stemma port on the Inventor Hat Mini
 
-![](images/grip/image27.png){ loading=lazy, width=45% }
-![](images/grip/image31.png){ loading=lazy, width=45% }
-
 ## Wrist motor
 
 Attach a bracket to the remaining motor in the pictured orientation. Secure with four of the included small tapping screws from the motor box.
 
 Attach the three-holed helical wrist drive gear to the motor horn with two M3x6 screws.
-
-![](images/grip/image19.png){ loading=lazy, width=45% }
-![](images/grip/image28.png){ loading=lazy, width=45% }
-![](images/grip/image11.png){ loading=lazy, width=45% }
-![](images/grip/image12.png){ loading=lazy, width=45% }
-![](images/grip/image6.png){ loading=lazy, width=45% }
-![](images/grip/image56.png){ loading=lazy, width=45% }
-![](images/grip/image42.png){ loading=lazy, width=45% }
-![](images/grip/image26.png){ loading=lazy, width=45% }
-![](images/grip/image23.png){ loading=lazy, width=45% }
  
 Plug the pressure sense plug into the Gripper Hat at port A0. This plug does not have polarity.
 
@@ -189,29 +108,7 @@ Plug the wrist motor into the motor port on he Gripper Hat. Leave the other moto
 
 Plug the stemma cable from the rangefinder into the Gripper hat.
 
-![](images/grip/image38.png){ loading=lazy, width=45% }
-![](images/grip/image55.png){ loading=lazy, width=45% }
-![](images/grip/image24.png){ loading=lazy, width=45% }
-![](images/grip/image57.png){ loading=lazy, width=45% }
-![](images/grip/image74.png){ loading=lazy, width=45% }
-![](images/grip/image54.png){ loading=lazy, width=45% }
-![](images/grip/image51.png){ loading=lazy, width=45% }
-![](images/grip/image37.png){ loading=lazy, width=45% }
-![](images/grip/image43.png){ loading=lazy, width=45% }
-![](images/grip/image25.png){ loading=lazy, width=45% }
-![](images/grip/image15.png){ loading=lazy, width=45% }
-![](images/grip/image14.png){ loading=lazy, width=45% }
-![](images/grip/image5.png){ loading=lazy, width=45% }
-![](images/grip/image65.png){ loading=lazy, width=45% }
-![](images/grip/image48.png){ loading=lazy, width=45% }
-![](images/grip/image18.png){ loading=lazy, width=45% }
-![](images/grip/image47.png){ loading=lazy, width=45% }
-
 ## Marker Display Box
-
-![](images/grip/image13-g.jpg){ loading=lazy, width=45% }
-![](images/grip/image14-g.jpg){ loading=lazy, width=45% }
-![](images/grip/image1-g.jpg){ loading=lazy, width=45% }
 
 Put a 10x15x4 bearing onto the ABS tube followed by a 3/8" x 7/8" steel washer. 
 
@@ -226,21 +123,7 @@ Put another steel washer on the bottom of the tube under the bearing, and holdin
 
 Find (or create yourself) the 75cm cable with male JST ZH plugs at both ends. Thread it into the top of the display box, down the tube, into the gripper, and out the hole on the side of the gripper. Plug the cable into the gripper hat.
 
-![](images/grip/image31-g.jpg){ loading=lazy, width=45% }
-![](images/grip/image32-g.jpg){ loading=lazy, width=45% }
-![](images/grip/image33-g.jpg){ loading=lazy, width=45% }
-![](images/grip/image15-g.jpg){ loading=lazy, width=45% }
-
 ## Check out tests and calibration
-
-![](images/grip/image18-g.jpg){ loading=lazy, width=45% }
-![](images/grip/image21.png){ loading=lazy, width=45% }
-![](images/grip/image75.png){ loading=lazy, width=45% }
-![](images/grip/image77.png){ loading=lazy, width=45% }
-![](images/grip/image78.png){ loading=lazy, width=45% }
-![](images/grip/image79.png){ loading=lazy, width=45% }
-![](images/grip/image80.png){ loading=lazy, width=45% }
-![](images/grip/image81.png){ loading=lazy, width=45% }
 
 Find (or create yourself) the barrel jack to Female JST ZH adapter. Plug this into the wire at the top of the display box, and use one of the anchor power supplies (24V) to power on the gripper.
 
@@ -251,7 +134,7 @@ You can generate a valid wifi share code with [qifi.org](http://qifi.org)
 
 Find the IP or hostname of the device using your router and SSH into the pi with user `pi` and password `Fo0bar!!`
 
-    ssh pi@<adress>
+    ssh pi@<address>
 
 Once in, stop the cranebot service and run the checkout script
 
