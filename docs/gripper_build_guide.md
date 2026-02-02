@@ -2,8 +2,8 @@
 
 Hardware Version: Arpeggio
 
-Print time: about 12 hours
-Build time: about 2 hours
+**Print time**: about 12 hours  
+**Build time**: about 2 hours
 
 First you should have printed the parts according to the [print guide](print_guide.md)
 
