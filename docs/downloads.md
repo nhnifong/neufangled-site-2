@@ -2,17 +2,19 @@
 
 ## Controller Software
 
+Stringman Robots can be controlled from a web interface at [neufangled.com/control_panel](http://neufangled.com/control_panel) or in a LAN-only mode described in [Desktop Setup Guide](desktop_setup_guide.md)
+
+### Source
+
 The source for both the servers which run on the raspberri pi's in the robot components, and the desktop control panel are contained in the same repository.
 
 **[cranebot-firmware on Github](https://github.com/nhnifong/cranebot3-firmware)**
-
-I do not yet have a bundled release of the control panel. it has to be run from the source according to the instructions in the [Desktop Setup Guide](desktop_setup_guide.md)
 
 ## STLs for 3D printing
 
 Compatible with the pilot release hardware kit
 
- * **[Download STLs](assets/stringman_pilot_stls.zip)**
+ * **[Download STLs](assets/stringman_arp_gripper_pilot_anchors_stls.zip)**
  * **[Print Guide](print_guide.md)**
 
 ## CAD Design Document
@@ -24,6 +26,7 @@ CAD for this project was done in Onshape
 ## BOM
 
 **[Bill Of Materials](https://docs.google.com/spreadsheets/d/1kLsbVjql81v7XJIGpkoWXCpJR9cWpTetd8mgG_NxFNU/edit?usp=sharing)**
+
 
 ## License
 

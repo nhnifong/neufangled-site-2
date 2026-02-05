@@ -204,9 +204,11 @@ Put a 10x15x4 bearing onto the ABS tube followed by a 3/8" x 7/8" steel washer.
 
 Make a mark 6mm from the end of the tube with a sharpie pen.
 Forcefully wwist the helical gear onto the tube until the marked 6mm of tube protrude past the gear.
-Put a drop of cyanoacrylate glue where the gear and tube touch.
 
 ![](images/grip/PXL_20260203_024931510.jpg){ loading=lazy, width=45% }
+![](images/grip/PXL_20260203_151856981.jpg){ loading=lazy, width=45% }
+
+Put a drop of cyanoacrylate glue where the gear and tube touch.
 
 Stick marker codes onto all four sizes of the marker box.
 If you are printing them, This is the [sticker paper on amazon](https://www.amazon.com/dp/B092444Z49) and the [document with the marker images is here](https://docs.google.com/document/d/1B41dnssHsm1Db0LiHVgLatEv6H1jt0amIagw2v5_7dU/edit?usp=sharing). It must be printed without margins.
